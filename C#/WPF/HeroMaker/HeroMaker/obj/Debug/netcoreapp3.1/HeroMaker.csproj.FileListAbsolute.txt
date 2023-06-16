@@ -1,0 +1,16 @@
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.exe
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.deps.json
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.runtimeconfig.json
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.dll
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\bin\Debug\netcoreapp3.1\HeroMaker.pdb
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.AssemblyInfo.cs
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.dll
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.pdb
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.genruntimeconfig.cache
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.HeroMakerForm.resources
+C:\Users\btzla\source\repos\HeroMaker\HeroMaker\obj\Debug\netcoreapp3.1\HeroMaker.Form2.resources

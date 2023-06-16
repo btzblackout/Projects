@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XPnCWPa5XraGfOgJRCvv+OWy2cztZNdHsuBdzbLhM5nr3JLonaKcbDiTEIDyEC/Lwibp7naW9MJ8Vj0nBZjGMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

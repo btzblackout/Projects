@@ -1,0 +1,16 @@
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.exe
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.deps.json
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.runtimeconfig.json
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.dll
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\bin\Debug\netcoreapp3.1\StopWatch.pdb
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.Form1.resources
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.AssemblyInfo.cs
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.dll
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.pdb
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.genruntimeconfig.cache
+C:\Users\btzla\source\repos\Stopwatch\Stopwatch\obj\Debug\netcoreapp3.1\StopWatch.Properties.Resources.resources

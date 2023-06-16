@@ -1,0 +1,10 @@
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\bin\Debug\Programming Project 2.exe.config
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\bin\Debug\Programming Project 2.exe
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\bin\Debug\Programming Project 2.pdb
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming Project 2.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming_Project_2.Form1.resources
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming_Project_2.Properties.Resources.resources
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming Project 2.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming Project 2.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming Project 2.exe
+C:\Users\btzla\source\repos\Programming Project 2\Programming Project 2\obj\Debug\Programming Project 2.pdb

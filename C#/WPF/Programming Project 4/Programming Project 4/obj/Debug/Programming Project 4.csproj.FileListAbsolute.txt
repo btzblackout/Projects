@@ -1,0 +1,10 @@
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\bin\Debug\Programming Project 4.exe.config
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\bin\Debug\Programming Project 4.exe
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\bin\Debug\Programming Project 4.pdb
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming Project 4.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming_Project_4.Form1.resources
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming_Project_4.Properties.Resources.resources
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming Project 4.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming Project 4.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming Project 4.exe
+C:\Users\btzla\source\repos\Programming Project 4\Programming Project 4\obj\Debug\Programming Project 4.pdb

@@ -1,0 +1,16 @@
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.exe.config
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.exe
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.pdb
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Login.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Properties.Resources.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.exe
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MainMenu.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Inventory.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.ItemEdit.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.ItemInfo.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.OrderItem.resources
+C:\Users\btzla\source\repos\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Orders.resources

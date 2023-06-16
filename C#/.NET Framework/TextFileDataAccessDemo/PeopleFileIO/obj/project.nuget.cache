@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wlmPbn3sIHNfqNHDhkunnAwAt8Bprh+fH+OPb7UgNXe4eXJThBQUdgdR4/vXODhxOZMfVd4Sq4iwhxRkE7irlg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\TextFileDataAccessDemo\\PeopleFileIO\\PeopleFileIO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

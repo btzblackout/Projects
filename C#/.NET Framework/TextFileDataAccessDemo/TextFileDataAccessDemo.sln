@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFileDataAccessDemo", "TextFileDataAccessDemo\TextFileDataAccessDemo.csproj", "{604F50DD-41C7-4820-905D-E2D23398A077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleFileIO", "PeopleFileIO\PeopleFileIO.csproj", "{CD2B480D-47A2-42FC-ACAF-3D95F4F0174C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{604F50DD-41C7-4820-905D-E2D23398A077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604F50DD-41C7-4820-905D-E2D23398A077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604F50DD-41C7-4820-905D-E2D23398A077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604F50DD-41C7-4820-905D-E2D23398A077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2B480D-47A2-42FC-ACAF-3D95F4F0174C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2B480D-47A2-42FC-ACAF-3D95F4F0174C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2B480D-47A2-42FC-ACAF-3D95F4F0174C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2B480D-47A2-42FC-ACAF-3D95F4F0174C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69505474-36CA-4EAA-8A71-3426535FF011}
+	EndGlobalSection
+EndGlobal

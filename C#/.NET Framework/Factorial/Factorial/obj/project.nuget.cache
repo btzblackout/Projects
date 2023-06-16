@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nnnb+1oS/ggSHXewre62uVwKBt1PCfTEZy8HX981E/lekzUwKEheM/G1I2+rFaGOgDhQlmZ0I5uuheeLu07SWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\Factorial\\Factorial\\Factorial.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

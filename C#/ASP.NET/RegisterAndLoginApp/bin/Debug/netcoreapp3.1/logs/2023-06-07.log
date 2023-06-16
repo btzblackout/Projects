@@ -1,0 +1,34 @@
+2023-06-07 06:48:56.5980 INFO Entering the ProcessLogin method.
+2023-06-07 06:48:56.6208 INFO Parameter: Username: asdfa Password: asdf
+2023-06-07 06:48:57.6834 INFO Login failure.
+2023-06-07 06:49:01.8971 INFO Entering the ProcessLogin method.
+2023-06-07 06:49:01.8971 INFO Parameter: Username: admin Password: admin
+2023-06-07 06:49:01.8971 INFO Login success.
+2023-06-07 07:04:05.7641 INFO Entering the ProcessLogin method.
+2023-06-07 07:04:05.7850 INFO Parameter: Username: asdf Password: 
+2023-06-07 07:04:06.8713 INFO Entering the ProcessLogin method.
+2023-06-07 07:04:06.8727 INFO Parameter: Username: asdf Password: asdf
+2023-06-07 07:04:06.9809 INFO Login failure
+2023-06-07 07:04:06.9809 INFO Login failure
+2023-06-07 07:04:10.8387 INFO Entering the ProcessLogin method.
+2023-06-07 07:04:10.8387 INFO Parameter: Username: admin Password: admin
+2023-06-07 07:04:13.4273 INFO Login success.
+2023-06-07 17:00:00.1537 INFO Entering the ProcessLogin method.
+2023-06-07 17:00:00.1749 INFO Parameter: Username: admin Password: admin
+2023-06-07 17:00:04.6364 INFO Login success.
+2023-06-07 17:00:52.9848 INFO Entering the ProcessLogin method.
+2023-06-07 17:00:52.9848 INFO Parameter: Username: admin Password: admin
+2023-06-07 17:00:54.6030 INFO Login success.
+2023-06-07 17:01:52.7826 INFO Entering the ProcessLogin method.
+2023-06-07 17:01:52.8034 INFO Parameter: Username: admin Password: admin
+2023-06-07 17:01:54.4595 INFO Login success.
+2023-06-07 18:49:50.6686 INFO Entering the ProcessLogin method.
+2023-06-07 18:49:51.5821 INFO Leaving the ProcessLogin method
+2023-06-07 18:49:56.5032 INFO Entering the ProcessLogin method.
+2023-06-07 18:50:04.2902 INFO Leaving the ProcessLogin method
+2023-06-07 18:53:14.6037 INFO Entering the ProcessLogin method.
+2023-06-07 18:53:14.8039 INFO Parameter: Username: doesnotexist Password: nopassword
+2023-06-07 18:53:14.8039 INFO Leaving the ProcessLogin method
+2023-06-07 18:53:22.1417 INFO Entering the ProcessLogin method.
+2023-06-07 18:53:23.2890 INFO Parameter: Username: admin Password: admin
+2023-06-07 18:53:23.2890 INFO Leaving the ProcessLogin method

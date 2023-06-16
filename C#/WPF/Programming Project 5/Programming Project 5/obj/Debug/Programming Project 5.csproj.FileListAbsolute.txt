@@ -1,0 +1,11 @@
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\bin\Debug\Programming Project 5.exe.config
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\bin\Debug\Programming Project 5.exe
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\bin\Debug\Programming Project 5.pdb
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming Project 5.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming_Project_5.LuckyNumbers.resources
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming_Project_5.Properties.Resources.resources
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming_Project_5.Results.resources
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming Project 5.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming Project 5.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming Project 5.exe
+C:\Users\btzla\source\repos\Programming Project 5\Programming Project 5\obj\Debug\Programming Project 5.pdb

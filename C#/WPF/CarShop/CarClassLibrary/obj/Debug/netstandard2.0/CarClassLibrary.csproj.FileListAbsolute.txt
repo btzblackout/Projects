@@ -1,0 +1,9 @@
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\bin\Debug\netstandard2.0\CarClassLibrary.deps.json
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\bin\Debug\netstandard2.0\CarClassLibrary.dll
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\bin\Debug\netstandard2.0\CarClassLibrary.pdb
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.AssemblyInfo.cs
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.dll
+C:\Users\btzla\source\repos\CarShop\CarClassLibrary\obj\Debug\netstandard2.0\CarClassLibrary.pdb

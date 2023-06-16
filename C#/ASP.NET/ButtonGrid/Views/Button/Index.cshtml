@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ButtonGrid.Models.ButtonModel>
+<style>
+    .game-button {
+        width: 75px;
+    }
+
+    .game-button-image {
+        width: 70px;
+    }
+
+    .button-zone {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .line-break {
+        flex-basis: 100%;
+        height 0;
+    }
+
+    .button-label {
+        font-size: 8px;
+        text-align: center;
+    }
+</style>
+
+@{
+    //store the img  names in an array for more efficient code.
+    string[] imgNames = { "Blue-Button.png", "Green-Button.png", "Yellow-Button.png" };
+    int counter = 0;
+}
+<p>Current Time: @DateTime.Now</p>
+<form>
+    <div class="button-zone">
+        @for (int i = 0; i < Model.Count(); i++)
+        {
+            //start a new line every five elements
+            if (i % 5 == 0)
+            {
+                <div class="line-break"></div>
+            }
+    <div class="oneButton" id="@i">
+        <button class="game-button" type="submit" value="@Model.ElementAt(i).Id" name="buttonNumber" asp-controller="Button" asp-action="HandleButtonClick">
+            <img class="game-button-image" src="~/img/@imgNames[Model.ElementAt(i).ButtonState]" />
+            <div class="button-label">
+                @Model.ElementAt(i).Id
+                ,
+                @Model.ElementAt(i).ButtonState
+            </div>
+        </button>
+    </div>
+        }
+    </div>
+</form>
+@for (int i = 0; i < Model.Count(); i++)
+{
+    if (Model.ElementAt(i).Equal)
+    {
+        counter++;
+    }
+}
+@if(counter == Model.Count())
+{
+    <p>Congratulations! All the buttons match!</p>
+}
+else
+{
+    <p id="Results">Not all buttons are the same color. See if you can make them all match.</p>
+}
+

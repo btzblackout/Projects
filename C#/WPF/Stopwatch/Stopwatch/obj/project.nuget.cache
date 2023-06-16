@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kvHR5DDbyAHJdyoQkoG49ITmozaR7rB5WlwZ4D1PBLLtfUT8ZQD/KYgt3Ov7VRTQRAm6ogUFYZA3Ozf4/kPedg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\Stopwatch\\Stopwatch\\StopWatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

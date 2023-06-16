@@ -1,0 +1,13 @@
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.exe
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.deps.json
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.runtimeconfig.json
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.dll
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\bin\Debug\netcoreapp3.1\GreatestCommonDivisor.pdb
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.AssemblyInfo.cs
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.dll
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.pdb
+C:\Users\btzla\source\repos\GreatestCommonDivisor\GreatestCommonDivisor\obj\Debug\netcoreapp3.1\GreatestCommonDivisor.genruntimeconfig.cache

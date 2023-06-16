@@ -1,0 +1,7 @@
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\bin\Debug\Exercise 9.exe.config
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\bin\Debug\Exercise 9.exe
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\bin\Debug\Exercise 9.pdb
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\obj\Debug\Exercise 9.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\obj\Debug\Exercise 9.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\obj\Debug\Exercise 9.exe
+C:\Users\btzla\source\repos\Exercise 9\Exercise 9\obj\Debug\Exercise 9.pdb

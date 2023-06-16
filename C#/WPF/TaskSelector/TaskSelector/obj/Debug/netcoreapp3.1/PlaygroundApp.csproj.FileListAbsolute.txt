@@ -1,0 +1,15 @@
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.exe
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.deps.json
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.runtimeconfig.json
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.dll
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\bin\Debug\netcoreapp3.1\PlaygroundApp.pdb
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.Form1.resources
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.AssemblyInfo.cs
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.dll
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.pdb
+C:\Users\btzla\source\repos\PlaygroundApp\PlaygroundApp\obj\Debug\netcoreapp3.1\PlaygroundApp.genruntimeconfig.cache

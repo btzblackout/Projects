@@ -1,0 +1,13 @@
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.exe
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.deps.json
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.runtimeconfig.json
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.dll
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\bin\Debug\netcoreapp3.1\TextFileDataAccessDemo.pdb
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.AssemblyInfo.cs
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.dll
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.pdb
+C:\Users\btzla\source\repos\TextFileDataAccessDemo\TextFileDataAccessDemo\obj\Debug\netcoreapp3.1\TextFileDataAccessDemo.genruntimeconfig.cache

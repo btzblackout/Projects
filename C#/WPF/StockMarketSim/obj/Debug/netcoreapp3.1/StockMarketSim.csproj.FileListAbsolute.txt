@@ -1,0 +1,16 @@
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.exe
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.deps.json
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.runtimeconfig.json
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.dll
+C:\Users\btzla\source\repos\StockMarketSim\bin\Debug\netcoreapp3.1\StockMarketSim.pdb
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.Form1.resources
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.AssemblyInfo.cs
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.dll
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.pdb
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.genruntimeconfig.cache
+C:\Users\btzla\source\repos\StockMarketSim\obj\Debug\netcoreapp3.1\StockMarketSim.Form2.resources

@@ -1,0 +1,23 @@
+C:\Users\btzla\source\repos\Wax-On Wax-Off\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\btzla\source\repos\Wax-On Wax-Off\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\btzla\source\repos\Wax-On Wax-Off\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\btzla\source\repos\Wax-On Wax-Off\bin\Debug\netcoreapp3.1\Wax-On Wax-Off.exe
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.AssemblyInfo.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.RazorAssemblyInfo.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.RazorAssemblyInfo.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.TagHelpers.input.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.TagHelpers.output.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.RazorCoreGenerate.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.RazorTargetAssemblyInfo.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\Wax-On Wax-Off.RazorTargetAssemblyInfo.cs
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\staticwebassets\Wax-On Wax-Off.StaticWebAssets.Manifest.cache
+C:\Users\btzla\source\repos\Wax-On Wax-Off\obj\Debug\netcoreapp3.1\staticwebassets\Wax-On Wax-Off.StaticWebAssets.xml

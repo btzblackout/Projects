@@ -1,0 +1,15 @@
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.exe
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.deps.json
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.runtimeconfig.json
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.dll
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\bin\Debug\netcoreapp3.1\TaskSelector.pdb
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\PlaygroundApp.Form1.resources
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.AssemblyInfo.cs
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.dll
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.pdb
+C:\Users\btzla\source\repos\TaskSelector\TaskSelector\obj\Debug\netcoreapp3.1\TaskSelector.genruntimeconfig.cache

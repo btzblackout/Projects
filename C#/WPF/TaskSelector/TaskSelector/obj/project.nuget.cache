@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f6Sa8pHvwmZPGiXXZwjagPRFscn4LvmNupWzfoqk+oRYLOr2kAGm70dixErwRdt7ihnsmIcffi/whE4bjwXp/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\TaskSelector\\TaskSelector\\TaskSelector.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

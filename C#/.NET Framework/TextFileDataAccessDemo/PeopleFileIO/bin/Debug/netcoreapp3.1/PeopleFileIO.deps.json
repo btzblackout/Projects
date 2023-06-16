@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PeopleFileIO/1.0.0": {
+        "dependencies": {
+          "TextFileDataAccessDemo": "1.0.0"
+        },
+        "runtime": {
+          "PeopleFileIO.dll": {}
+        }
+      },
+      "TextFileDataAccessDemo/1.0.0": {
+        "runtime": {
+          "TextFileDataAccessDemo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PeopleFileIO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextFileDataAccessDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

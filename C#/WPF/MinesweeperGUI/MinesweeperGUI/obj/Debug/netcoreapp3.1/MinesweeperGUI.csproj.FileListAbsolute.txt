@@ -1,0 +1,22 @@
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.exe
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.deps.json
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.runtimeconfig.json
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.dll
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\MinesweeperGUI.pdb
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.Form1.resources
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.AssemblyInfo.cs
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.dll
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.pdb
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.genruntimeconfig.cache
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.Form2.resources
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\Minesweeper Console App.exe
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\Minesweeper Console App.dll
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\netcoreapp3.1\Minesweeper Console App.pdb
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.csproj.CopyComplete
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.Properties.Resources.resources
+C:\Users\btzla\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\netcoreapp3.1\MinesweeperGUI.HighScore.resources

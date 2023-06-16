@@ -1,0 +1,10 @@
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\bin\Debug\Programming Exercise 6.exe.config
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\bin\Debug\Programming Exercise 6.exe
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\bin\Debug\Programming Exercise 6.pdb
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming Exercise 6.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming_Exercise_6.Form1.resources
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming_Exercise_6.Properties.Resources.resources
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming Exercise 6.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming Exercise 6.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming Exercise 6.exe
+C:\Users\btzla\source\repos\Programming Exercise 6\Programming Exercise 6\obj\Debug\Programming Exercise 6.pdb

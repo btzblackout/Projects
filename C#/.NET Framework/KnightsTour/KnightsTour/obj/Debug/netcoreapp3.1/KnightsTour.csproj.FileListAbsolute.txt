@@ -1,0 +1,13 @@
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.exe
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.deps.json
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.runtimeconfig.json
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.dll
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\bin\Debug\netcoreapp3.1\KnightsTour.pdb
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.AssemblyInfo.cs
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.dll
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.pdb
+C:\Users\btzla\source\repos\KnightsTour\KnightsTour\obj\Debug\netcoreapp3.1\KnightsTour.genruntimeconfig.cache

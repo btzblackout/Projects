@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8i63X2QhEOJVVAMAi+J2ioi1QJIDlp7Ufs+DKc0RFdv+ZtA+bueRLc2v4JNZcVDOJF+XoVxLit8tLsQQbHX1pQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\btzla\\source\\repos\\GreatestCommonDivisor\\GreatestCommonDivisor\\GreatestCommonDivisor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\btzla\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

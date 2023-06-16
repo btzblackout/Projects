@@ -1,0 +1,13 @@
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.AssemblyInfoInputs.cache
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.AssemblyInfo.cs
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.exe
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.deps.json
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.runtimeconfig.json
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.runtimeconfig.dev.json
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.dll
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\bin\Debug\netcoreapp3.1\Minesweeper Console App.pdb
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.dll
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.pdb
+C:\Users\btzla\source\repos\Minesweeper\Minesweeper Console App\obj\Debug\netcoreapp3.1\Minesweeper Console App.genruntimeconfig.cache

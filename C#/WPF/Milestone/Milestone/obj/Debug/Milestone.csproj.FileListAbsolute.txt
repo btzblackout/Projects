@@ -1,0 +1,10 @@
+C:\Users\btzla\source\repos\Milestone\Milestone\bin\Debug\Milestone.exe.config
+C:\Users\btzla\source\repos\Milestone\Milestone\bin\Debug\Milestone.exe
+C:\Users\btzla\source\repos\Milestone\Milestone\bin\Debug\Milestone.pdb
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.csprojAssemblyReference.cache
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.Properties.Resources.resources
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.csproj.GenerateResource.cache
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.csproj.CoreCompileInputs.cache
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.exe
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.pdb
+C:\Users\btzla\source\repos\Milestone\Milestone\obj\Debug\Milestone.InventoryManagement.resources
