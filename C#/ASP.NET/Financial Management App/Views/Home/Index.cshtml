@@ -1,0 +1,215 @@
+﻿@model User
+<section class="h-100 gradient-form">
+    <div class="container py-5 h-100">
+
+        <!--Display the users current balance.-->
+        <h2>Balance: $@Html.DisplayFor(model => model.Balance)</h2>
+        <a href="@Url.Action("EditBalance", "Home")">Edit Balance</a>
+
+        <!--Calculate the price of all expenses left in current pay period.-->
+        <h5>Expenses Left in This Pay Period: $@{Decimal total = 0;
+            foreach (var expense in Model.CurrentPayPeriodExpenses) 
+            {
+                total += expense.Price;
+            }
+        }@total</h5>
+
+        <!--Calculate the balance after deducting all expenses from current balance.-->
+        <h5>Balance after expenses & Goals: $@{
+            Decimal goalTotal = 0;
+            foreach(Goal goal in Model.GoalList)
+            {
+                goalTotal += goal.SavedAmount;
+            }
+            Decimal updatedBalance = Model.Balance - total - goalTotal;
+        }@updatedBalance</h5>
+        <div class="row d-flex justify-content-center align-items-start h-100">
+            <div class="col align-items-start">
+                <div class="row justify-content-center align-items-center">
+                    <h3>Income</h3>
+                </div>
+                <div class="row pr-5">
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IncomeList.ElementAt(0).Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IncomeList.ElementAt(0).Amount)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IncomeList.ElementAt(0).Begin_Date)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IncomeList.ElementAt(0).End_Date)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var income in Model.IncomeList)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.Amount)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.Begin_Date_String)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.End_Date_String)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row justify-content-center align-items-center pt-lg-5">
+                    <h3>Goals</h3>
+                </div>
+                <div class="row pr-5">
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GoalList.ElementAt(0).Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GoalList.ElementAt(0).Price)
+                                </th>
+                                <th>
+                                    Amount to Be Saved
+                                </th>
+                                <th>
+                                    Number of Paychecks
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var income in Model.GoalList)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.Price)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.SavedAmount)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => income.NumOfPaychecks)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col card">   
+                <div>
+                    <div class="row justify-content-center align-items-center">
+                        <h3>Current Pay Period</h3>
+                    </div>
+                    @{
+                        if (Model.IncomeList.Count != 0)
+                        {
+                            <div class="row justify-content-center align-items-center">
+                                <p>@Model.IncomeList[0].Begin_Date_String - @Model.IncomeList[0].End_Date_String</p>
+                            </div>
+                            
+                        }
+                    }
+                    <div class="row card-body">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Name)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Price)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Date)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var expense in Model.CurrentPayPeriodExpenses)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => expense.Name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => expense.Price)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => expense.DateString)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center h-100 ">
+            <div class="col">
+                <div class="row"></div>
+            </div>
+            <div class="col card mt-3">
+                <div class="row justify-content-center align-items-center">
+                    <h3>Next Pay Period</h3>
+                </div>
+                @{ 
+                    if(Model.IncomeList.Count != 0)
+                    {
+                        <div class="row justify-content-center align-items-center">@Model.IncomeList[0].Next_Pay_Begin_String - @Model.IncomeList[0].Next_Pay_End_String</div>
+                    }
+                }
+                <div class="row card-body">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Price)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ExpenseList.ElementAt(0).Date)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var expense in Model.NextPayPeriodExpenses)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => expense.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => expense.Price)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => expense.DateString)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

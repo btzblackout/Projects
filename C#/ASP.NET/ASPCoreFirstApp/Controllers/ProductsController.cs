@@ -14,11 +14,16 @@ namespace ASPCoreFirstApp.Controllers
     public class ProductsController : Controller
     {
         private static Logger logger = LogManager.GetLogger("myAppLoggerRules");
-        ProductsDAO repository = new ProductsDAO();
+        // comment out one of these to choose the database source.
+        //HardCodedSampleDataRepository repository = new HardCodedSampleDataRepository();
+        //ProductsDAO repository = new ProductsDAO();
 
-        public ProductsController()
+        public IProductsDataService repository { get; set; }
+
+
+        public ProductsController(IProductsDataService dataservice)
         {
-            repository = new ProductsDAO();
+            repository = dataservice;
         }
 
         public IActionResult Index()

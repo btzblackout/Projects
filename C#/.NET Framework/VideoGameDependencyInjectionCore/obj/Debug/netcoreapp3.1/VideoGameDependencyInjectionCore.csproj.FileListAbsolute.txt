@@ -1,0 +1,17 @@
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.exe
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.deps.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.runtimeconfig.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.runtimeconfig.dev.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.csproj.AssemblyReference.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.AssemblyInfoInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.AssemblyInfo.cs
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.csproj.CoreCompileInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.genruntimeconfig.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\VideoGameDependencyInjectionCore\obj\Debug\netcoreapp3.1\VideoGameDependencyInjectionCore.csproj.CopyComplete

@@ -1,0 +1,14 @@
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.exe
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.deps.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.runtimeconfig.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.runtimeconfig.dev.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\bin\Debug\netcoreapp3.1\LINQDemonstration.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.csproj.AssemblyReference.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.AssemblyInfoInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.AssemblyInfo.cs
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.csproj.CoreCompileInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQDemonstration\obj\Debug\netcoreapp3.1\LINQDemonstration.genruntimeconfig.cache

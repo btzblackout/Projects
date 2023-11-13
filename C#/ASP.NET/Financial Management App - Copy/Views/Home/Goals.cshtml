@@ -1,0 +1,105 @@
+﻿@model User
+
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GoalList[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoalList[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoalList[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoalList[0].Priority)
+            </th>
+            <th>
+                Amount to Save Per Pay Period
+            </th>
+            <th>
+                Pay Periods
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoalList[0].Notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.GoalList) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @{
+                    if (item.Date_String == "1/1/0001")
+                    {
+                        <p>No Date</p>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.Date_String)
+                    }
+                }
+            </td>
+            <td>
+                @{
+                    if (item.Priority == 0)
+                    {
+                        <p>No Priority</p>
+                    }
+                    else
+                    {
+                        // More user friendly to print low, med, high than 1, 2, or 3.
+                        if (item.Priority == 1)
+                        {
+                            <p>Low</p>
+                        }
+                        else if (item.Priority == 2)
+                        {
+                            <p>Medium</p>
+                        }
+                        else
+                        {
+                            <p>High</p>
+                        }
+                    }
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SavedAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfPaychecks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                <input class="btn btn-outline-info btn-sm mr-1" type="button" value="Edit" onclick="location.href='@Url.Action("EditGoal", "Home", item)'" />
+                <input class="btn btn-outline-danger btn-sm" type="button" value="Delete" onclick="location.href='@Url.Action("DeleteGoal", "Home", item)'" />
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@{ 
+    if(Model.IncomeList.Count == 0)
+    {
+        <p>You must first add an income to add goals.</p>
+    }
+    else
+    { 
+        <p>
+            <a asp-action="AddGoal">Add Goal</a>
+        </p>
+    }
+}
+

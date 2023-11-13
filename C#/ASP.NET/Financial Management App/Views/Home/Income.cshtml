@@ -1,0 +1,65 @@
+﻿@model User
+
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeList[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeList[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeList[0].Begin_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeList[0].End_Date)
+            </th>
+            <th>
+                Pay Frequency
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeList[0].Notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.IncomeList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Begin_Date_String)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.End_Date_String)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Interval) @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Notes)
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <input class="btn btn-outline-info btn-sm mr-1" type="button" value="Edit" onclick="location.href='@Url.Action("EditIncome", "Home")'" />
+                        <input class="btn btn-outline-danger btn-sm" type="button" value="Delete" onclick="location.href='@Url.Action("DeleteIncome", "Home")'" />
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@{
+    if (Model.IncomeList.Count == 0)
+    {
+        @Html.ActionLink("Add Income", "AddIncome");
+    }
+}

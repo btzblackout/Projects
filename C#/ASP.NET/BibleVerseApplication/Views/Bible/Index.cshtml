@@ -1,0 +1,30 @@
+﻿@model BibleVerse
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<body>
+    <h4>Bible Verse Search</h4>
+    <hr />
+    @using (Html.BeginForm("SearchForVerse", "bible", FormMethod.Post))
+    {
+        <label for="search">Search Bible:</label>
+        @Html.TextBoxFor(m => m.Text, new { id = "search" })
+
+        <br><br>
+
+        <label>Search in the Old Testament, New Testament, or both?</label>
+        <br />
+        @Html.RadioButtonFor(m => m.Testament, "Old") <label>Old Testament</label>
+        <br />
+        @Html.RadioButtonFor(m => m.Testament, "New") <label>New Testament</label>
+        <br />
+        @Html.RadioButtonFor(m => m.Testament, "Both") <label>Both</label>
+        <br><br>
+
+        <button type="submit" value="Submit">Search</button>
+    }
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@using Financial_Management_App.Models
+@model Expense
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackout Financial Management</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <h1>Error</h1>
+    <h4>The expense  @Html.DisplayFor(expense=> expense.Name) already exists in your list.</h4>
+    <button type="button" class="btn btn-outline-danger" onclick="location.href='@Url.Action("AddExpense", "Home")'">Back</button>
+</body>
+</html>

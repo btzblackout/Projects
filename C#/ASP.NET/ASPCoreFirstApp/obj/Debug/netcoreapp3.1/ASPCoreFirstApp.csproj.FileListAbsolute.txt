@@ -130,3 +130,4 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\ASPCoreFirstAp
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\ASPCoreFirstApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\ASPCoreFirstApp\bin\Debug\netcoreapp3.1\NLog.config
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\ASPCoreFirstApp\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\ASPCoreFirstApp\obj\Debug\netcoreapp3.1\ASPCoreFirstApp.csproj.AssemblyReference.cache

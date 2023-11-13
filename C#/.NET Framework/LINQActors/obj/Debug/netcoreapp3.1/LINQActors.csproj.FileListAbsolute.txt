@@ -1,0 +1,16 @@
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.exe
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.deps.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.runtimeconfig.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.runtimeconfig.dev.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\LINQActors.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.csproj.AssemblyReference.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.AssemblyInfoInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.AssemblyInfo.cs
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.csproj.CoreCompileInputs.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.csproj.CopyComplete
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.pdb
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\.NET Framework\LINQActors\obj\Debug\netcoreapp3.1\LINQActors.genruntimeconfig.cache
