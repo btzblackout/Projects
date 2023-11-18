@@ -7,9 +7,16 @@ namespace Financial_Management_App.DataAccess
 {
     interface GoalDao
     {
-        public List<Goal>ReturnGoalList(User user);
-        public void AddGoal(Goal goal);
-        public bool UpdateGoal(Goal goal);
-        public bool DeleteGoal(Goal goal);
+        // Create
+        public void AddGoal(Goal goal, User user);
+
+        // Read
+        public List<Goal> ReturnGoalList(User user);
+
+        // Update
+        public bool UpdateGoal(Goal goal, User user);
+
+        // Delete
+        public bool DeleteGoal(Goal goal, User user);
     }
 }

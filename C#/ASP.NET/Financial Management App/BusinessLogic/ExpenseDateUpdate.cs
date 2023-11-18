@@ -16,12 +16,12 @@ namespace Financial_Management_App.BusinessLogic
         public User Update (User user)
         {
             // Get a fresh, updated list
-            ExpenseDaoImp expenseDaoImp = new ExpenseDaoImp();
-            UserDaoImp userDaoImp = new UserDaoImp();
-            IncomeDaoImp incomeDaoImp = new IncomeDaoImp();
+            ExpenseDao expenseDao = new ExpenseDaoImp();
+            UserDao userDao = new UserDaoImp();
+            IncomeDao incomeDao = new IncomeDaoImp();
 
-            user.ExpenseList = expenseDaoImp.ReturnExpenseList(user);
-            user.IncomeList = incomeDaoImp.ReturnIncomeList(user);
+            user.ExpenseList = expenseDao.ReturnExpenseList(user);
+            user.IncomeList = incomeDao.ReturnIncomeList(user);
             // Parse through the list
             foreach (Expense expense in user.ExpenseList)
             {
@@ -59,10 +59,10 @@ namespace Financial_Management_App.BusinessLogic
                     }
 
                     // Save the new expense in the Database.
-                    expenseDaoImp.EditExpense(expense, user);
+                    expenseDao.EditExpense(expense, user);
 
                     // Save the updated balance
-                    userDaoImp.UpdateBalance(user.ID, user.Balance);
+                    userDao.UpdateBalance(user.ID, user.Balance, user);
                 }
 
             }
@@ -74,7 +74,7 @@ namespace Financial_Management_App.BusinessLogic
                 if(user.IncomeList[0].Next_Pay_Begin <= DateTime.Now)
                 {
                     // Repeat until the paycheck is current.
-                    while(user.IncomeList[0].Begin_Date < DateTime.Now)
+                    while(user.IncomeList[0].Next_Pay_Begin <= DateTime.Now)
                     {
                         // Update the new begin date.
                         user.IncomeList[0].Begin_Date = user.IncomeList[0].End_Date.AddDays(1);
@@ -85,6 +85,8 @@ namespace Financial_Management_App.BusinessLogic
 
                     
                 }
+                // Save the new pay.
+                incomeDao.UpdateIncome(user.IncomeList[0], user);
             }
             
             // Set the users current pay period list

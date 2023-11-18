@@ -15,10 +15,10 @@ namespace Financial_Management_App.Controllers
     public class HomeController : Controller
     {
         // Dao objects
-        ExpenseDaoImp expenseDaoImp = new ExpenseDaoImp();
-        UserDaoImp userDaoImp = new UserDaoImp();
-        IncomeDaoImp incomeDaoImp = new IncomeDaoImp();
-        GoalDaoImp goalDaoImp = new GoalDaoImp();
+        ExpenseDao expenseDao = new ExpenseDaoImp();
+        UserDao userDao = new UserDaoImp();
+        IncomeDao incomeDao = new IncomeDaoImp();
+        GoalDao goalDao = new GoalDaoImp();
 
         // Model objects
         User currentUser = new User();
@@ -34,21 +34,21 @@ namespace Financial_Management_App.Controllers
             // Ensure the user is logged in.
             if(UserLoggedInCheck())
             {
-                // Set the session so the user stays logged in.
+                // Get the session to ensure the user is logged in.
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user from the DB.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Call for the Expense date update.
                 currentUser = expenseDateUpdate.Update(currentUser);
 
                 // Call for the Income list update.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
 
                 // Call for the Goal list update
-                currentUser.GoalList = goalDaoImp.ReturnGoalList(currentUser);
+                currentUser.GoalList = goalDao.ReturnGoalList(currentUser);
 
                 // Return the Home page and pass the current user.
                 return View(currentUser);
@@ -77,12 +77,14 @@ namespace Financial_Management_App.Controllers
         {
             if(UserLoggedInCheck())
             {
-                // Set the session so the user stays logged in.
+                // Get the session to ensure the user is logged in.
                 string userSession = HttpContext.Session.GetString("username");
 
                 // Grab the user from the DB.
-                currentUser = userDaoImp.CheckByUsername(userSession);
-                userDaoImp.UpdateBalance(currentUser.ID, user.Balance);
+                currentUser = userDao.CheckByUsername(userSession);
+
+                // TODO: see if currentuser is not needed here because User is passed.
+                userDao.UpdateBalance(currentUser.ID, user.Balance, currentUser);
                 return RedirectToAction("Index");
             }
             else
@@ -121,7 +123,7 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Call for the Expense date update.
                 currentUser = expenseDateUpdate.Update(currentUser);
@@ -147,19 +149,19 @@ namespace Financial_Management_App.Controllers
                         string user = HttpContext.Session.GetString("username");
 
                         // Grab the user object.
-                        currentUser = userDaoImp.CheckByUsername(user);
+                        currentUser = userDao.CheckByUsername(user);
 
                         // Populate missing parts of expense
                         expense.UserId = currentUser.ID;
 
                         // Check if the expense name already exists (true = exists, false = does not exist)
-                        if (expenseDaoImp.CheckForExistingExpense(expense, currentUser))
+                        if (expenseDao.CheckForExistingExpense(expense, currentUser))
                         {
                             return View("ExpenseExists", expense);
                         }
 
                         // Add expense to users expense list
-                        currentUser = expenseDaoImp.AddExpense(expense, currentUser);
+                        currentUser = expenseDao.AddExpense(expense, currentUser);
 
                         // Return to the expenses page.
                         return RedirectToAction("Expenses");
@@ -202,10 +204,10 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Process the deleteion of the expense.
-                expenseDaoImp.RemoveExpense(expense.ID, currentUser);
+                expenseDao.DeleteExpense(expense.ID, currentUser);
 
                 return RedirectToAction("Expenses");
             }
@@ -236,12 +238,12 @@ namespace Financial_Management_App.Controllers
                     string user = HttpContext.Session.GetString("username");
 
                     // Grab the user object.
-                    currentUser = userDaoImp.CheckByUsername(user);
+                    currentUser = userDao.CheckByUsername(user);
 
                     // Set the expense user id.
                     expense.UserId = currentUser.ID;
 
-                    expenseDaoImp.EditExpense(expense, currentUser);
+                    expenseDao.EditExpense(expense, currentUser);
 
                     return RedirectToAction("Expenses");
 
@@ -267,10 +269,10 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Grab the user's list of income.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
                 return View(currentUser);
             }
@@ -288,7 +290,7 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // If the income name is not null then the button is clicked from addincome.
                 if (income.Name != null)
@@ -297,7 +299,7 @@ namespace Financial_Management_App.Controllers
                     income.UserId = currentUser.ID;
 
                     // If true, the income name doesn't exist, otherwise the income name already exists.
-                    if (!incomeDaoImp.CheckIncomeName(income, currentUser))
+                    if (!incomeDao.CheckIncomeName(income, currentUser))
                     {
                         // Add the income to the user
                         currentUser.IncomeList.Add(income);
@@ -305,7 +307,7 @@ namespace Financial_Management_App.Controllers
                         currentUser = incomeDateCalculate.CalculatePayEndDate(currentUser);
 
                         // Save income to DB
-                        incomeDaoImp.AddIncome(currentUser.IncomeList[0], currentUser);
+                        incomeDao.AddIncome(currentUser.IncomeList[0], currentUser);
 
                         return RedirectToAction("Income");
                     }
@@ -331,10 +333,10 @@ namespace Financial_Management_App.Controllers
                 string username = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(username);
+                currentUser = userDao.CheckByUsername(username);
 
                 // Grab the income.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
                 return View(currentUser.IncomeList[0]);
             }
             else
@@ -351,18 +353,18 @@ namespace Financial_Management_App.Controllers
                 String username = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(username);
+                currentUser = userDao.CheckByUsername(username);
 
                 // Grab the income list.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
                 // Grab the goals list.
-                currentUser.GoalList = goalDaoImp.ReturnGoalList(currentUser);
+                currentUser.GoalList = goalDao.ReturnGoalList(currentUser);
 
                 if(currentUser.GoalList.Count == 0)
                 {
                     // Remove the income.
-                    if (incomeDaoImp.DeleteIncome(currentUser.IncomeList[0]))
+                    if (incomeDao.DeleteIncome(currentUser.IncomeList[0], currentUser))
                     {
                         return RedirectToAction("Income");
                     }
@@ -392,10 +394,10 @@ namespace Financial_Management_App.Controllers
                 string username = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(username);
+                currentUser = userDao.CheckByUsername(username);
 
                 // Grab the income.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
                 return View(currentUser.IncomeList[0]);
             }
@@ -407,9 +409,15 @@ namespace Financial_Management_App.Controllers
         }
         public IActionResult ProcessEditIncome(Income income)
         {
-            if(UserLoggedInCheck())
+            // Get the session to ensure the user is logged in.
+            string userSession = HttpContext.Session.GetString("username");
+
+            // Grab the user from the DB.
+            currentUser = userDao.CheckByUsername(userSession);
+
+            if (UserLoggedInCheck())
             {
-                if (incomeDaoImp.UpdateIncome(income))
+                if (incomeDao.UpdateIncome(income, currentUser))
                 {
                     return RedirectToAction("Income");
                 }
@@ -434,13 +442,13 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Grab the users goal list.
-                currentUser.GoalList = goalDaoImp.ReturnGoalList(currentUser);
+                currentUser.GoalList = goalDao.ReturnGoalList(currentUser);
 
                 // Grab the users income list.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
                 return View(currentUser);
             }
             else
@@ -469,10 +477,10 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Grab the user income list.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
                 // Populate the goals userid.
                 goal.UserID = currentUser.ID;
@@ -484,7 +492,7 @@ namespace Financial_Management_App.Controllers
                     goal = calculateGoalSaveAmount.CalculateSaveAmountForDate(goal, currentUser);
 
                     // Save the goal.
-                    goalDaoImp.AddGoal(goal);
+                    goalDao.AddGoal(goal, currentUser);
 
                     // Call the goals page.
                     return RedirectToAction("Goals");
@@ -495,7 +503,7 @@ namespace Financial_Management_App.Controllers
                     goal = calculateGoalSaveAmount.CalculateSaveAmountForPriority(goal, currentUser);
 
                     // Save the goal.
-                    goalDaoImp.AddGoal(goal);
+                    goalDao.AddGoal(goal, currentUser);
 
                     // Call the goals page.
                     return RedirectToAction("Goals");
@@ -527,10 +535,10 @@ namespace Financial_Management_App.Controllers
                 string user = HttpContext.Session.GetString("username");
 
                 // Grab the user object.
-                currentUser = userDaoImp.CheckByUsername(user);
+                currentUser = userDao.CheckByUsername(user);
 
                 // Grab the user income list.
-                currentUser.IncomeList = incomeDaoImp.ReturnIncomeList(currentUser);
+                currentUser.IncomeList = incomeDao.ReturnIncomeList(currentUser);
 
                 // Populate the goals userid.
                 goal.UserID = currentUser.ID;
@@ -542,7 +550,7 @@ namespace Financial_Management_App.Controllers
                     goal = calculateGoalSaveAmount.CalculateSaveAmountForDate(goal, currentUser);
 
                     // Save the goal.
-                    goalDaoImp.UpdateGoal(goal);
+                    goalDao.UpdateGoal(goal, currentUser);
 
                     // Call the goals page.
                     return RedirectToAction("Goals");
@@ -553,7 +561,7 @@ namespace Financial_Management_App.Controllers
                     goal = calculateGoalSaveAmount.CalculateSaveAmountForPriority(goal, currentUser);
 
                     // Save the goal.
-                    goalDaoImp.UpdateGoal(goal);
+                    goalDao.UpdateGoal(goal, currentUser);
 
                     // Call the goals page.
                     return RedirectToAction("Goals");
@@ -580,8 +588,14 @@ namespace Financial_Management_App.Controllers
         {
             if(UserLoggedInCheck())
             {
+                // Get the session to ensure the user is logged in.
+                string userSession = HttpContext.Session.GetString("username");
+
+                // Grab the user from the DB.
+                currentUser = userDao.CheckByUsername(userSession);
+
                 // Process the deletion of the goal.
-                goalDaoImp.DeleteGoal(goal);
+                goalDao.DeleteGoal(goal, currentUser);
 
                 return RedirectToAction("Goals");
             }

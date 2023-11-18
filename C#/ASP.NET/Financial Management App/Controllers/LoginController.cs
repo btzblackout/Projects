@@ -12,7 +12,7 @@ namespace Financial_Management_App.Controllers
 {
     public class LoginController : Controller
     {
-        UserDaoImp userDAOImp = new UserDaoImp();
+        UserDao userDAO = new UserDaoImp();
 
         // Landing (Login) page.
         public IActionResult Index()
@@ -36,7 +36,7 @@ namespace Financial_Management_App.Controllers
             User newUser = new User();
             
             // Check the users credentials.
-            newUser = userDAOImp.Login(user);
+            newUser = userDAO.Login(user);
 
             // If the username returned is null the credentials were invalid.
             if (newUser.Username != null)
@@ -58,13 +58,13 @@ namespace Financial_Management_App.Controllers
                 if (user.Username != null)
                 {
                     // Check if the username already exists.
-                    User checkUsername = userDAOImp.CheckByUsername(user.Username);
+                    User checkUsername = userDAO.CheckByUsername(user.Username);
 
                     // If this == null then the username does not exist.
                     if (checkUsername.Username == null)
                     {
                         // Register the user
-                        userDAOImp.Register(user);
+                        userDAO.Register(user);
                         return View("Index");
                     }
 

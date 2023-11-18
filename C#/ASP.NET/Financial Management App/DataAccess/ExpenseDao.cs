@@ -8,12 +8,19 @@ namespace Financial_Management_App.DataAccess
 {
     public interface ExpenseDao
     {
-        public List<Expense> ReturnExpenseList(User user);
-
+        // Create
         public User AddExpense(Expense expense, User user);
 
-        public void RemoveExpense(int expenseId, User user);
+        // Read
+        public List<Expense> ReturnExpenseList(User user);
 
+        // Update
         public User EditExpense(Expense expense, User user);
+
+        // Delete
+        public void DeleteExpense(int expenseId, User user);
+
+        // Prevent duplicate expense names.
+        public bool CheckForExistingExpense(Expense expense, User user);
     }
 }

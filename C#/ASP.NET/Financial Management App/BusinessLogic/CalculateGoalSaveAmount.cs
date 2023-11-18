@@ -49,7 +49,16 @@ namespace Financial_Management_App.BusinessLogic
                 default:
                     break;
             }
-            goal.SavedAmount = savePortion;
+
+            // Check if the amount to save is more than the original price.
+            if(savePortion >= goal.Price)
+            {
+                goal.SavedAmount = goal.Price;
+            }
+            else
+            {
+                goal.SavedAmount = savePortion;
+            }
             goal.NumOfPaychecks = (int)Math.Ceiling(goal.Price / savePortion);
 
 

@@ -8,8 +8,14 @@ namespace Financial_Management_App.DataAccess
 {
     public interface UserDao
     {
-        public User CheckByUsername(string username);
-        public User Login(User user);
+        // Create
         public void Register(User user);
+
+        // Read
+        public User Login(User user);
+        public User CheckByUsername(string username);
+
+        // Update
+        public void UpdateBalance(int id, Decimal balance, User user);     
     }
 }

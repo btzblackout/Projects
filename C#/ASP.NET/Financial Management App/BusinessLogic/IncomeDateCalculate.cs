@@ -9,9 +9,9 @@ namespace Financial_Management_App.BusinessLogic
 {
     public class IncomeDateCalculate
     {
-        IncomeDaoImp incomeDaoImp = new IncomeDaoImp();
-        GoalDaoImp goalDaoImp = new GoalDaoImp();
-        UserDaoImp userDaoImp = new UserDaoImp();
+        IncomeDao incomeDao = new IncomeDaoImp();
+        GoalDao goalDao = new GoalDaoImp();
+        UserDao userDao = new UserDaoImp();
         public User CalculatePayEndDate(User user)
         {
 
@@ -44,7 +44,7 @@ namespace Financial_Management_App.BusinessLogic
             if(user.GoalList.Count != 0)
             {
                 // Grab the users goals
-                user.GoalList = goalDaoImp.ReturnGoalList(user);
+                user.GoalList = goalDao.ReturnGoalList(user);
 
                 // Parse through the goals and deduct the amounts from the users balance, decrement the intervals.
                 foreach (Goal goal in user.GoalList)
@@ -53,14 +53,14 @@ namespace Financial_Management_App.BusinessLogic
                     goal.NumOfPaychecks--;
 
                     // Save the goal
-                    goalDaoImp.UpdateGoal(goal);
+                    goalDao.UpdateGoal(goal, user);
                 }
             }
             
 
 
             // Save the user balance
-            userDaoImp.UpdateBalance(user.ID, user.Balance);
+            userDao.UpdateBalance(user.ID, user.Balance, user);
             // Return the income.
             return user;
         }

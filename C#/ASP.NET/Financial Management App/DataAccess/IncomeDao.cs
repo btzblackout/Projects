@@ -13,11 +13,12 @@ namespace Financial_Management_App.DataAccess
 
         // Read
         public List<Income> ReturnIncomeList(User user);
+        public bool CheckIncomeName(Income income, User user);
 
         // Update
-        public bool UpdateIncome(Income income);
+        public bool UpdateIncome(Income income, User user);
 
         // Delete
-        public bool DeleteIncome(Income income);
+        public bool DeleteIncome(Income income, User user);
     }
 }

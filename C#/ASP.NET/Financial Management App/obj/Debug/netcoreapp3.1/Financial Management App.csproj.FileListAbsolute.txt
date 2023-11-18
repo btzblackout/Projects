@@ -131,3 +131,4 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Mana
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddGoal.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditGoal.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Home\DeleteGoal.cshtml.g.cs
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.csproj.AssemblyReference.cache
