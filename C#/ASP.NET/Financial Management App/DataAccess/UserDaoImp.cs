@@ -13,6 +13,9 @@ namespace Financial_Management_App.DataAccess
         // Create 
         public void Register(User user)
         {
+            // Encrypt the users password
+            user.Password = EncryptPassword(user.Password);
+
             // Call the DBConnection method with appropriate string.
             DBConnection("INSERT INTO users (Username, Password, First_Name, Last_Name, Balance) VALUES ('" + user.Username + "', '" + user.Password + "', '" + user.First_Name + "', '" + user.Last_Name + "', " + user.Balance + ")", user);
         }
@@ -23,8 +26,22 @@ namespace Financial_Management_App.DataAccess
             // Create new user.
             User returnUser = new User();
 
-            // Call the DBConnection method with appropriate string and return user.
-            return returnUser = DBConnection("SELECT * FROM users WHERE Username = '" + user.Username + "' AND Password = '" + user.Password + "'", user);
+            // Encrypt the users password
+            user.Password = EncryptPassword(user.Password);
+
+            // Call the DBConnection method with appropriate string
+            returnUser = DBConnection("SELECT * FROM users WHERE Username = '" + user.Username + "' AND Password = '" + user.Password + "'", user);
+
+            Debug.WriteLine(EncryptPassword("admin"));
+            // If the returnUser is null then skip
+            if(returnUser.Username != null)
+            {
+                // Decrypt the users password
+                returnUser.Password = DecryptPassword(returnUser.Password);
+            }
+ 
+            // return the user
+            return returnUser;
         }
 
         // Check if the username already exists.
@@ -127,6 +144,57 @@ namespace Financial_Management_App.DataAccess
 
             // Close the connection.
             connection.Close();
+        }
+
+        // Encode password.
+        private string EncryptPassword(string password)
+        {
+            try
+            {
+                // Create a byte array.
+                byte[] byteString = new byte[password.Length];
+
+                // Encode the password and save to the byte array.
+                byteString = System.Text.Encoding.UTF8.GetBytes(password);
+
+                // Convert the byte array to a string.
+                string encodedPassword = Convert.ToBase64String(byteString);
+
+                // Return the string.
+                return encodedPassword;
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Error encrypting " + e.Message);
+            }
+        }
+
+        // Decode password.
+        private string DecryptPassword(string password)
+        {
+            // Create the encoder.
+            System.Text.UTF8Encoding encoder = new System.Text.UTF8Encoding();
+
+            // Create the decoder.
+            System.Text.Decoder utf8Decoder = encoder.GetDecoder();
+
+            // Convert the encrypted password from string to byte array.
+            byte[] byteToDecode = Convert.FromBase64String(password);
+
+            // Get the character count of the byte array.
+            int charCount = utf8Decoder.GetCharCount(byteToDecode, 0, byteToDecode.Length);
+
+            // Create the char array to hold the decoded password.
+            char[] decodedPassword = new char[charCount];
+
+            utf8Decoder.GetChars(byteToDecode, 0, byteToDecode.Length, decodedPassword, 0);
+
+            // Convert the decoded password char array to a string
+            string result = new string(decodedPassword);
+
+            // Return the string.
+            return result;
         }
     }
 }

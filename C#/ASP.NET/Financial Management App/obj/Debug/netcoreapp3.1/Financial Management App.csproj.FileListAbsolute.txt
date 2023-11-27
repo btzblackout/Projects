@@ -112,7 +112,6 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Mana
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Login\DisplayUsers.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Login\RegisterExists.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Login\LoginError.cshtml.g.cs
