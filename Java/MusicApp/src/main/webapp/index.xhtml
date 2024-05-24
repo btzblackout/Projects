@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Weather App</title>
+</h:head>
+<h:body>
+<center>
+	<h:form>
+		<table>
+			<tr>
+				<td>Username:</td>
+				<td><h:inputText id="username" value="#{user.username}" title="" /> 
+				<h:message for="username" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><h:inputSecret id="password" value="#{user.password}" title="" /> 
+				<h:message for="password" /></td>
+			</tr>
+		</table>
+		<h:commandButton value="Login" action="#{controller.Login(user)}" />
+		<h:commandButton value="Register" action="#{controller.Register(user)}" />
+	</h:form>
+</center>
+</h:body>
+</html>

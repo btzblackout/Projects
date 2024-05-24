@@ -1,0 +1,8 @@
+23:28:55.948 [main] INFO  controller.TestLogger - test 
+23:28:55.950 [main] DEBUG controller.TestLogger - test 
+23:28:55.950 [main] ERROR controller.TestLogger - test 
+23:28:55.950 [main] WARN  controller.TestLogger - test 
+23:29:26.159 [main] INFO  controller.TestLogger - test 
+23:29:26.161 [main] DEBUG controller.TestLogger - test 
+23:29:26.161 [main] ERROR controller.TestLogger - test 
+23:29:26.161 [main] WARN  controller.TestLogger - test 

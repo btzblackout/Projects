@@ -1,0 +1,34 @@
+<!--
+	AUTHOR: Raymond Lawson
+	CST-361
+	Developed for Week 2 Assignment 3.
+-->
+<!--This page is the default template for web pages on my application.-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title><ui:insert name="title">Shipping Application</ui:insert></title>
+</h:head>
+<h:body>
+	<div id="page">
+		<div id="header">
+			<ui:insert name="header">
+    			<ui:include src = "/templates/defaultHeader.xhtml"/>
+			</ui:insert>
+		</div>
+		<div id="content">
+			<ui:insert name="content">
+    			<ui:include src = "/templates/defaultContent.xhtml"/>
+			</ui:insert>
+		</div>
+		<div id="footer">
+			<ui:insert name="footer">
+    			<ui:include src = "/templates/defaultFooter.xhtml"/>
+			</ui:insert>
+		</div>
+	</div>
+</h:body>
+</html>
