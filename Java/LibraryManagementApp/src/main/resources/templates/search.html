@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{_layout.html}">
+<head>
+    <title>Bookshelf</title>
+</head>
+<body>
+    <h1 layout:fragment="title">Search</h1>
+    <div layout:fragment="content" class="container-fluid">
+        <div class="row">
+            <div th:each="book :${books}">
+                <!-- Account Balance Card -->
+                <div class="col h-100 pb-2" >
+                    <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="card-body">
+                            <a th:href="@{/search/{id}(id=${book.id})}" class="stretched-link"></a>
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <!-- Title Row -->
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                <div th:text="${book.title}"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Author Row -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="text-s font-weight-bold text-primary mb-1">
+                                                Author:
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-s font-weight-bold text-primary mb-1">
+                                                <div th:text="${book.author}"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quantity Row -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="text-s font-weight-bold text-primary mb-1">
+                                                Quantity:
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-s font-weight-bold text-primary mb-1">
+                                                <div th:text="${book.quantity}"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="row">
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

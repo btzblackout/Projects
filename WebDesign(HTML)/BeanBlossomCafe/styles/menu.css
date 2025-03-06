@@ -1,0 +1,323 @@
+/*  Document Information
+    - Document: menu.css
+    - Client: Blossom Bean Cafe
+    - Author: Raymond Lawson
+*/
+
+/* "Chalkboard" Menu Container. */
+.Menu {
+  color: #fff;
+  background-color: #2f2f2f;
+  background-image: url(/media/images/Chalkboard-Texture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  padding: 20px;
+  border: 10px solid #5c4033;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Chalkduster", "Comic Sans MS", cursive;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Menu h1,
+.Menu h3,
+.Menu h4 {
+  color: #fff;
+  font-family: "Chalkduster", "Comic Sans MS", cursive;
+}
+.Drinks {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.Drinks h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.Pastries {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+.Pastries h1 {
+  text-align: center;
+}
+.Menu_Details {
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+  align-self: center;
+  display: none;
+}
+
+.Menu_Details.active {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 70vh;
+}
+@media only screen and (max-width: 600px) {
+  .Menu_Details.active {
+    height: 50vh;
+  }
+}
+.Menu_Details_Image {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.Menu_Details_Info {
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.Menu_Details_Title {
+  color: #4a2c2a;
+  font-family: "PlayfairDisplay", "Open Sans";
+  width: 100%;
+  margin: 0 0 8px 0;
+  font-size: clamp(1.5em, 3vw, 3em);
+  text-align: center;
+}
+.Menu_Details_Price {
+  width: 100%;
+  margin: 0, 0, 20px, 0;
+  font-size: clamp(1em, 2vw, 1.4em);
+  text-align: center;
+}
+.Menu_Details_Content {
+  width: 80%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  font-family: "OpenSans";
+  font-weight: 300;
+  height: 100%;
+  overflow-y: auto;
+}
+.Menu_Details_Description {
+  margin: 0;
+  font-size: clamp(1em, 1.5vw, 1.65em);
+}
+.Menu_Details_Base {
+  margin: 0;
+  font-size: clamp(0.8em, 1vw, 1.05em);
+}
+.Menu_Details_Milk {
+  margin: 0;
+  font-size: clamp(0.8em, 1vw, 1.05em);
+}
+.Menu_Details_Flavor {
+  margin: 0;
+  font-size: clamp(0.8em, 1vw, 1.05em);
+}
+.Menu_Details_Finish {
+  margin: 0;
+  font-size: clamp(0.8em, 1vw, 1.05em);
+}
+.Menu_Prompt {
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: left;
+  position: absolute;
+}
+.Menu_Drinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.Menu_Pastries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* ======DRINK SECTION====== */
+
+.Menu_Drink {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.Drink_Title {
+  color: #fff;
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.Drink_Content {
+  border: 2px solid #fff;
+  background-color: transparent;
+  height: 150px;
+  padding: 10px;
+  border-radius: 3px 3px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+}
+.Drink_Content p {
+  margin: 3px 0;
+  font-size: 0.9em;
+}
+.Drink_Content p:not(:last-child) {
+  border-bottom: 2px dashed #ddd;
+}
+.Drink_Content::after {
+  content: "";
+  width: 15px;
+  height: 60px;
+  top: 30px;
+  right: -20px;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 0 100px 100px 0;
+  transform: none;
+  position: absolute;
+}
+.Drink_Small_Handle {
+  content: "";
+  width: 11px;
+  height: 40px;
+  top: 42px;
+  right: -14px;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 0 100px 100px 0;
+  transform: none;
+  position: absolute;
+}
+
+/* ======PASTRY SECTION====== */
+
+.Pastry_Content {
+  border: 10px solid #fff;
+  background-color: transparent;
+  height: 150px;
+  padding: 10px;
+  border-radius: 0px 0px 50px 50px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+.Pastry_Content img {
+  height: 60%;
+  width: 60%;
+  align-self: center;
+  border-radius: 20%;
+}
+.Pastry_Content p {
+  margin-bottom: 0px;
+  font-size: 0.9em;
+}
+.Pastry_Content::after {
+  content: "";
+  width: 150px;
+  height: 20px;
+  top: 80px;
+  right: 0px;
+  border: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0px 0px;
+  transform: none;
+  position: absolute;
+}
+
+/* Coloring for specific words within menu. */
+.Espresso_Brown {
+  color: #4a2c2a;
+  font-weight: bold;
+}
+.Blossom_Pink {
+  color: #e8a7b7;
+  font-weight: bold;
+}
+.Creamy_Beige {
+  color: #f5e8d3;
+  font-weight: bold;
+}
+.Warm_Gold {
+  color: #d4a017;
+  font-weight: bold;
+}
+.Espresso_Ingredient,
+.Chilled_Espresso_Ingredient {
+  color: #a67b5b;
+}
+.Milk_Foam_Ingredient {
+  color: #f5e8d3;
+}
+.Steamed_Milk_Ingredient,
+.Cold_Milk_Ingredient {
+  color: #fff;
+}
+.Local_Honey_Ingredient,
+.Wildflower_Honey_Ingredient {
+  color: #d4a017;
+}
+.Hot_Water_Ingredient {
+  color: rgb(104, 27, 14);
+}
+.Chocolate_Ingredient {
+  color: #7a5a3f;
+  font-weight: bold;
+}
+.Lavender_Ingredient {
+  color: rgb(62, 1, 116);
+}
+.Cinnamon_Ingredient {
+  color: #a74c37;
+}
+.Rose_Syrup_Ingredient,
+.Edible_Petals_Ingredient {
+  color: rgb(255, 168, 183);
+}
+.Ice_Ingredient {
+  color: rgb(0, 128, 145);
+}
+.Orange_Blossom_Syrup_Ingredient {
+  color: #e79701;
+}
+.Vanilla_Ingredient {
+  color: #f5e8d3;
+  font-weight: bold;
+}
+.Cold_Steeped_Roast_Ingredient {
+  color: #a36230;
+}

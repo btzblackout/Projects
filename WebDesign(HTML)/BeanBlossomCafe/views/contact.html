@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main-dark.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Contact Us - Bean Blossom</title>
+  </head>
+  <body>
+    <div class="Body_Container">
+      <div class="Navigation_Placeholder"></div>
+
+      <!--Contact Header Paragraph-->
+      <div class="Contact_Us_Header">
+        <h2>Contact Us</h2>
+        <p>
+          We’re the heart behind Bean Blossom Cafe, and we’d love to hear from
+          you! Whether you’ve got a question about our house-roasted coffee, a
+          craving for a Lavender Blossom Scone, or just want to share your
+          favorite moment with us, we’re all ears. This little haven is built on
+          passion for bold flavors and cozy vibes, and connecting with you keeps
+          it blooming.
+        </p>
+        <p>
+          Don't want to wait for a response? Drop us a line—let’s chat over a
+          virtual cup of something special. (368) 686-3158 Monday - Saturday
+          from 8:00A.M. - 6:00P.M.
+        </p>
+      </div>
+
+      <!--Submittable Contact Form-->
+      <div class="Form_Section">
+        <form class="Form" id="Contact_Form" action="">
+          <div class="Form_Row">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="Form_Row">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="Form_Row">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="Form_Row">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="Form_Row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              form="Contact_Form"
+              placeholder="Enter your message..."
+            ></textarea>
+          </div>
+          <input class="Menu_Button" type="submit" placeholder="" />
+        </form>
+      </div>
+    </div>
+    <footer class="Footer_Placeholder"></footer>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    // Inject nav bar and footer.
+    $(".Navigation_Placeholder").load("/views/template.html .Navigation");
+    $(".Footer_Placeholder").load("/views/template.html .Footer");
+
+    // Check to see if there is nothing in localStorage (new user);
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    }
+
+    // Check localStorage to get the last selected theme and make active.
+    else if (localStorage.getItem("theme") == "dark") {
+      var element = document.body;
+      element.classList.add("dark-mode");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+  });
+</script>

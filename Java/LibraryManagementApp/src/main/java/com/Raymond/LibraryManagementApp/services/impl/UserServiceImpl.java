@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService
     private UserDto mapToUserDto(User user)
     {
         UserDto userDto = null;
-        // Check if the username is null (empty user)
+        // Check if the user is null
         if(user != null)
         {
             userDto = UserDto.builder()

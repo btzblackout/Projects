@@ -1,0 +1,592 @@
+/*  Document Information
+    - Document: main.css
+    - Client: Blossom Bean Cafe
+    - Author: Raymond Lawson
+*/
+
+/* ======GLOBAL====== */
+/* To ensure that border and padding are included IN width/height. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5e8d3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: #4a2c2a;
+  gap: 20px;
+  caret-color: rgb(255, 255, 255, 0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PlayfairDisplay", "Open Sans";
+  font-weight: 700;
+  font-size: italic;
+  color: #4a2c2a;
+}
+
+.Body_Container {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  width: 75%;
+  margin-top: 1%;
+  gap: 5vh;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+/*      =============INDEX PAGE=============      */
+/* ======HERO SECTION====== */
+.Hero_Section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.Hero_Image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Hero_Image img {
+  max-width: 100%;
+  height: 65vh;
+  border-radius: 20px;
+}
+.Tagline {
+  width: 100%;
+  font-size: clamp(0.8em, 1.3em, 2.5vw);
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Toggle_Button_Section button {
+  padding: 5px;
+  border-radius: 10px;
+}
+.Cafe_Descriptors {
+  width: 100%;
+  margin-top: 20px;
+}
+.Descriptor_List {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: clamp(1em, 1em, 1.2vw);
+  list-style-type: none;
+}
+.Pixel_Coffee {
+  height: 30px;
+  width: 30px;
+}
+/* ======ABOUT/MENU SPLIT SECTION====== */
+.Split_Section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Home_Menu_Section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.Home_Menu_Section form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Home_Menu_Section input {
+  margin-left: 50%;
+  margin-top: 20px;
+}
+.Home_Menu_Section input:hover {
+  cursor: pointer;
+}
+.Home_Menu_Section h1 {
+  padding-right: 20%;
+  font-family: "PlayfairDisplay";
+  font-weight: 500;
+  font-size: clamp(2em, 2.5vw, 3em);
+}
+.Item_Lists {
+  color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: row row-reverse;
+  justify-content: flex-start;
+  font-size: clamp(1em, 1.5vw, 2em);
+  font-family: "OpenSans";
+  background-color: #2f2f2f;
+  background-image: url(/media/images/Chalkboard-Texture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid #5c4033;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Chalkduster", "Comic Sans MS", cursive;
+  overflow-y: auto;
+}
+.Drink_List {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Header {
+  font-size: clamp(1vw, 2em, 2.5em);
+  align-self: center;
+  justify-content: center;
+}
+.Pastry_List {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Home_About_Section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Home_About_Section h1 {
+  font-family: "PlayfairDisplay";
+  font-weight: 500;
+  font-size: clamp(2em, 2.5vw, 3em);
+  margin-left: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .Home_About_Section h1 {
+    margin-left: 5%;
+  }
+}
+.Home_About_Section p {
+  width: 60%;
+  font-size: clamp(1em, 1.5vw, 2em);
+}
+.Home_About_Section input:hover {
+  cursor: pointer;
+}
+
+/* ======ROASTS SECTION====== */
+
+.Roasts_Section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Roasts_Section_Title {
+  font-size: clamp(0.8em, 1.5vw, 2em);
+  height: 10%;
+}
+.Roasts_Section_Discount {
+  font-family: "PlayfairDisplay", "OpenSans";
+  font-size: clamp(2vw, 2em, 1.4em);
+  padding-bottom: 20px;
+}
+.Roasts_Section_Roasts {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70%;
+}
+.Roasts_Section_Roasts img {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+}
+.Roast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Roast_Name {
+  font-size: clamp(1vw, 3vw, 2em);
+  height: 100%;
+}
+.Menu_Button {
+  border: 2px solid #d4a017;
+  color: #4a2c2a;
+  background-color: #e8a7b7;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: clamp(1vw, 1em, 1.3em);
+  border-radius: 20px;
+  box-shadow: 5px 5px #4a2c2a;
+}
+@media only screen and (max-width: 600px) {
+  .Menu_Button {
+    padding: 5px 5px;
+  }
+}
+
+/* ======TESTIMONIALS SECTION====== */
+
+.Testimonial_Section {
+  background-color: #4a2c2a;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  color: #f5e8d3;
+  font-size: clamp(1vw, 2em, 1.5em);
+  gap: 20px;
+  padding: 20px;
+}
+.Testimonial_Section h4 {
+  color: #f5e8d3;
+  font-family: "PlayfairDisplay", "OpenSans";
+}
+.Testimonial_Section p {
+  font-family: "OpenSans";
+  font-weight: 300;
+  color: #f5e8d3;
+}
+
+/* ======BEST SELLER SECTION====== */
+
+.Best_Seller_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.Best_Seller_Border {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: clamp(1vw, 1em, 1.5em);
+  font-family: "OpenSans";
+  font-style: italic;
+}
+.Best_Seller_Border img {
+  width: clamp(1vw, 1em, 1.5em);
+}
+.Best_Seller_Content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  gap: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .Best_Seller_Content {
+    height: 50vh;
+  }
+}
+.Best_Seller_Content img {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+}
+.Best_Seller_Information {
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.Best_Seller_Information_Title {
+  font-family: "PlayfairDisplay", "Open Sans";
+  font-size: clamp(1.5em, 3vw, 3em);
+  width: 100%;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+.Best_Seller_Information_Price {
+  width: 100%;
+  margin: 0, 0, 20px, 0;
+  font-size: clamp(1em, 2vw, 1.4em);
+  text-align: center;
+}
+.Best_Seller_Information_Content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "OpenSans";
+  font-weight: 300;
+  height: 100%;
+}
+.Best_Seller_Information_Description {
+  margin: 0;
+  font-size: clamp(1em, 1.5vw, 1.65em);
+}
+.Best_Seller_Information_Content button {
+  align-self: center;
+}
+
+/* ======IMAGE SECTION SECTION====== */
+.Image_Section {
+  width: 100%;
+}
+.Images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+}
+.Images img {
+  width: 18%;
+  border-radius: 20px;
+}
+
+/*      =============ABOUT PAGE=============      */
+
+/* ======ABOUT US SECTION====== */
+.About_Section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f5e8d3;
+  color: #4a2c2a;
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+.About_Section h1 {
+  font-size: clamp(1vw, 2.7em, 3.5em);
+}
+.About_Section_Special_Word {
+  color: #f5e8d3;
+  -webkit-text-stroke: 1px #4a2c2a;
+  font-weight: 900;
+}
+.About_Section_Content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-y: auto;
+}
+.About_Section_Content img {
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+}
+.About_Section_Content p {
+  font-size: clamp(1vw, 1em, 2em);
+  width: 100%;
+  font-family: "OpenSans";
+  font-weight: 500;
+}
+.About_Section_Content_Paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/*      =============CONTACT PAGE=============      */
+
+.Contact_Us_Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.Contact_Us_Header h2 {
+  font-family: "PlayfairDisplay";
+  font-weight: 600;
+  font-size: clamp(1vw, 2.5em, 2.5em);
+}
+.Contact_Us_Header p {
+  width: 100%;
+  font-size: clamp(1vw, 1.5em, 2em);
+  font-family: "OpenSans";
+}
+
+/* ======CONTACT FORM SECTION====== */
+.Form_Section {
+  width: 100%;
+  height: 70vh;
+}
+.Form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4a2c2a;
+  border-radius: 20px;
+}
+.Form_Row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 15%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #f5e8d3;
+}
+
+.Form_Row input {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+}
+.Form_Row textarea {
+  width: 60%;
+  height: 100px;
+  resize: none;
+  border-radius: 10px;
+}
+.Form_Row label {
+  font-size: Clamp(1vw, 1.5em, 2em);
+}
+
+/*      =============TEMPLATE PAGE=============      */
+/* ======NAVIGATION BAR====== */
+/* The use of clamp() makes the text responsive to the size of the browser. */
+
+.Navigation_Placeholder {
+  width: 100%;
+}
+.Navigation {
+  background-color: #4a2c2a;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+.Navigation h1 {
+  margin: 0;
+  color: #f5e8d3;
+  font-size: clamp(1.5vw, 2vw, 2em);
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "PlayfairDisplay", "OpenSans";
+  font-weight: 700;
+}
+.Navigation a {
+  color: #f5e8d3;
+  text-decoration: none;
+  font-family: "PlayfairDisplay", "OpenSans";
+  font-weight: 400;
+  font-size: clamp(1.3vw, 1.3vw, 2em);
+  padding: 5px 10px;
+}
+/*TODO: Make links collaps into dropdown on mobile*/
+.Navigation_Links {
+  display: flex;
+}
+.Navigation_Links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.Navigation_Social {
+  height: 100%;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.Navigation_Social img {
+  width: 2vw;
+}
+.Navigation_Social img:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* ======FOOTER====== */
+
+.Footer_Placeholder {
+  width: 100%;
+}
+.Footer {
+  width: 100%;
+  height: 20em;
+  background-color: #e8a7b7;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.Footer h3 {
+  font-size: clamp(1em, 1.5vw, 2em);
+  padding-bottom: 10px;
+}
+.Footer p {
+  font-family: "OpenSans";
+}
+.Hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.Social img {
+  width: clamp(1.5em, 2vw, 2vw);
+}
+.Social a:visited {
+  color: #4a2c2a;
+}
+.Shop_Information {
+  font-size: clamp(1em, 0.8vw, 1.2vw);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  overflow: hidden;
+}

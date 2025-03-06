@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main-dark.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Bean Blossom Cafe</title>
+  </head>
+  <body>
+    <!-- Main body container.-->
+    <div class="Body_Container">
+      <!--Navigation Bar Section-->
+      <div class="Navigation_Placeholder"></div>
+
+      <!--Hero Section-->
+      <div class="Hero_Section">
+        <div class="Hero_Image">
+          <img src="/media/images/Hero_Image.jpeg" alt="" />
+        </div>
+        <div class="Tagline">
+          <h1>Rich coffee, blooming with care.</h1>
+          <div class="Toggle_Button_Section">
+            <p id="Toggle_Text">Current theme: Bloom Mode.</p>
+            <button class="Menu_Button" onclick="ChangeTheme()">
+              Change Theme
+            </button>
+          </div>
+        </div>
+        <div class="Cafe_Descriptors">
+          <ul class="Descriptor_List">
+            <li><p>Velvety</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Robust</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Frothy</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Warm</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Aromatic</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Silky</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Blissful</p></li>
+            <li>
+              <img
+                class="Pixel_Coffee"
+                src="/media/images/PixelCoffee.png"
+                alt=""
+              />
+            </li>
+            <li><p>Toasty</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--About-Menu Split Section-->
+      <div class="Split_Section">
+        <!--About Us Section-->
+        <div class="Home_About_Section">
+          <h1>About Us</h1>
+          <p>
+            Bean Blossom Cafe is where bold coffee meets floral flair. Our
+            house-roasted beans craft drinks like the lavender-kissed Blossom
+            Brew, while fresh pastries—think flaky croissants and rose-petal
+            danishes—add a sweet touch. Step into a cozy haven buzzing with the
+            scent of espresso and dough, and discover why every sip and bite
+            feels like a little bloom of joy.
+          </p>
+          <form action="/views/about.html">
+            <input class="Menu_Button" type="submit" value="Learn More" />
+          </form>
+        </div>
+        <!--Menu Section-->
+        <div class="Home_Menu_Section">
+          <h1>Menu</h1>
+          <div class="Item_Lists">
+            <ul class="Drink_List">
+              <li class="Header">Drinks</li>
+              <li>Espresso</li>
+              <li>Americano</li>
+              <li>Latte</li>
+              <li>Cappuccino</li>
+              <li>Blossom Brew</li>
+              <li>Mocha Bloom</li>
+              <li>Honeyed Bean</li>
+              <li>The Blossom Bean Bliss</li>
+            </ul>
+            <ul class="Pastry_List">
+              <li class="Header">Pastries</li>
+              <li>Croissant</li>
+              <li>Blueberry Muffin</li>
+              <li>Cinnamon Roll</li>
+              <li>Lavender Blossom Scone</li>
+              <li>Rose Petal Danish</li>
+            </ul>
+          </div>
+          <form action="/views/menu.html">
+            <input class="Menu_Button" type="submit" value="Menu" />
+          </form>
+        </div>
+      </div>
+
+      <!-- Roasts Section-->
+      <div class="Roasts_Section">
+        <div class="Roasts_Section_Title">
+          <h1>Roasts Of the Week</h1>
+        </div>
+        <div class="Roasts_Section_Discount">
+          <p>20% OFF</p>
+        </div>
+        <div class="Roasts_Section_Roasts">
+          <div class="Roast">
+            <img src="/media/images/Blossom_Brew.jpeg" alt="" />
+            <h3 class="Roast_Name">Blossom Brew</h3>
+            <button class="Menu_Button">Menu</button>
+          </div>
+          <div class="Roast">
+            <img src="/media/images/Cappuccino.jpeg" alt="" />
+            <h3 class="Roast_Name">Cappuccino</h3>
+            <button class="Menu_Button">Menu</button>
+          </div>
+          <div class="Roast">
+            <img src="/media/images/Americano.jpeg" alt="" />
+            <h3 class="Roast_Name">Americano</h3>
+            <button class="Menu_Button">Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Section-->
+      <div class="Testimonial_Section">
+        <div class="Testimonial1">
+          <h4>
+            "The Honeyed Bean is my new obsession! That bold kick softened by
+            honey and a dash of cinnamon—it’s cozy and strong, like a hug in a
+            cup. Bean Blossom Cafe knows how to make coffee feel special."
+          </h4>
+          <p>Michael P., Coffee Lover</p>
+        </div>
+        <div class="Testimonial2">
+          <h4>
+            "I grabbed a Lavender Blossom Scone on a whim, and wow—it’s a
+            game-changer. The tender crumb with that honey drizzle and subtle
+            floral hint is pure bliss. This place turns pastries into art!"
+          </h4>
+          <p>Clara H., Local Baker</p>
+        </div>
+        <div class="Testimonial3">
+          <h4>
+            "Pairing the Blossom Bean Bliss with a Rose Petal Danish is my
+            perfect morning ritual. The latte’s velvety froth and petals match
+            the Danish’s flaky elegance so well—it’s a floral fantasy in every
+            sip and bite. Bean Blossom Cafe is my happy place!"
+          </h4>
+          <p>Olivia S., Regular Visitor</p>
+        </div>
+      </div>
+
+      <!--Best Seller Section-->
+      <div class="Best_Seller_Section">
+        <ul class="Best_Seller_Border">
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+        </ul>
+        <!--Best Seller Section Column 2 (Has 2 Rows (Best_Seller_Image, Best_Seller_Information))-->
+        <div class="Best_Seller_Content">
+          <!--Best Seller Content Row 1-->
+          <img src="/media/images/Blossom_Bean_Bliss.jpeg" alt="" />
+          <!--Best Seller Content Row 2 (Has 8 Columns (Best_Seller_Title, Best_Seller_Price, Best_Seller_Description, Best_Seller_Base, Best_Seller_Milk, Best_Seller_Flavor, Best_Seller_Finish, Best_Seller_Button))-->
+          <div class="Best_Seller_Information">
+            <!--Best Seller Information Column 1 (Best_Seller_Title)-->
+            <h3 class="Best_Seller_Information_Title">
+              The Blossom Bean Bliss
+            </h3>
+            <!--Best Seller Information Column 2 (Best_Seller_Price)-->
+            <p class="Best_Seller_Information_Price">$5.75</p>
+            <!--Best Seller Information Column 3 (Best_Seller_Description)-->
+            <div class="Best_Seller_Information_Content">
+              <p class="Best_Seller_Information_Description">
+                A silky latte infused with wildflower honey and a delicate
+                sprinkle of edible petals. A harmonious blend of bold espresso
+                and floral sweetness – our bestseller for a reason.
+              </p>
+              <!--Best Seller Information Column 4 (Best_Seller_Base)-->
+              <p class="Best_Seller_Information_Base">
+                <em>Base</em>: A double shot of espresso for that
+                <span style="color: #4a2c2a; font-weight: 700"
+                  >Espresso Brown</span
+                >
+                richness.
+              </p>
+              <!--Best Seller Information Column 5 (Best_Seller_Milk)-->
+              <p class="Best_Seller_Information_Milk">
+                <em>Milk</em>: Steamed to a
+                <span style="color: #f5e8d3; font-weight: 700"
+                  >Creamy Beige</span
+                >
+                froth, velvety and smooth
+              </p>
+              <!--Best Seller Information Column 6 (Best_Seller_Flavor)-->
+              <p class="Best_Seller_Information_Flavor">
+                <em>Flavor</em>: A swirl of wildflower honey adds a
+                <span style="color: #d4a017; font-weight: 700">Warm Gold</span>
+                sweetness - locally sourced for that artisanal touch.
+              </p>
+              <!--Best Seller Information Column 7 (Best_Seller_Finish)-->
+              <p class="Best_Seller_Information_Finish">
+                <em>Finish</em>: A light dust of dried, edible flower petals in
+                <span style="color: #e8a7b7; font-weight: 700"
+                  >Blossom Pink</span
+                >
+                hues, making it visually stunning and subtly floral.
+              </p>
+              <button class="Menu_Button">Menu</button>
+            </div>
+
+            <!--Best Seller Information Column 8 (Best_Seller_Button)-->
+          </div>
+        </div>
+        <!--Best Seller Section Column 3 (Best_Seller_Bottom)-->
+        <ul class="Best_Seller_Border">
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+          <li><img src="/media/images/Heart.png" alt="" /></li>
+          <li><p>Bestseller</p></li>
+        </ul>
+      </div>
+
+      <!--Image Section-->
+      <div class="Image_Section">
+        <div class="Images">
+          <img class="Slide" src="/media/images/Iced_Latte.jpeg" alt="" />
+          <img src="/media/images/Blueberry_Muffin.jpeg" alt="" />
+          <img src="/media/images/Latte.jpeg" alt="" />
+          <img src="/media/images/Rose_Petal_Danish.jpeg" alt="" />
+          <img src="/media/images/Cold_Blossom.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--Footer, imported from template.-->
+    <footer class="Footer_Placeholder"></footer>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    // Inject nav bar and footer.
+    $(".Navigation_Placeholder").load("/views/template.html .Navigation");
+    $(".Footer_Placeholder").load("/views/template.html .Footer");
+
+    // Check to see if there is nothing in localStorage (new user);
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    }
+
+    // Check localStorage to get the last selected theme and make active.
+    else if (localStorage.getItem("theme") == "dark") {
+      var element = document.body;
+      element.classList.add("dark-mode");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+  });
+
+  function ChangeTheme() {
+    // Check local storage
+    if (localStorage.getItem("theme") == "light") {
+      // Change the theme.
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Update local storage.
+      localStorage.setItem("theme", "dark");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+
+    // Check local storage.
+    else if (localStorage.getItem("theme") == "dark") {
+      // Change the theme.
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Update the local storage.
+      localStorage.setItem("theme", "light");
+
+      // Change the text to current theme (light).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Bloom Mode.";
+    }
+  }
+</script>

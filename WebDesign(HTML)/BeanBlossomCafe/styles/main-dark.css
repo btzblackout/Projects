@@ -1,0 +1,171 @@
+/*  Document Information
+    - Document: main-dark.css
+    - Client: Blossom Bean Cafe
+    - Author: Raymond Lawson
+*/
+
+/* ======GLOBAL====== */
+.dark-mode {
+  background-color: #2e1a18;
+  color: #e8d9c0;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #e8d9c0;
+}
+.dark-mode p {
+  color: #e8d9c0;
+}
+
+/*      =============INDEX PAGE=============      */
+
+/* ======TESTIMONIAL SECTION====== */
+.dark-mode .Testimonial_Section {
+  background-color: #cfae67;
+  color: #2e1a18;
+}
+.dark-mode .Testimonial_Section h4,
+.dark-mode .Testimonial_Section p {
+  color: #2e1a18;
+}
+
+/* ======BEST SELLER SECTION====== */
+.dark-mode .Best_Seller_Information {
+  background-color: #5f5b5b;
+}
+
+/*      =============MENU PAGE=============      */
+
+/* ======MENU SECTION====== */
+.dark-mode .Menu h1,
+.dark-mode .Menu h3,
+.dark-mode .Menu h4 {
+  color: #fff;
+  font-family: "Chalkduster", "Comic Sans MS", cursive;
+}
+.dark-mode .Menu_Details_Info {
+  background-color: #5f5b5b;
+}
+.dark-mode .Drinks h2 {
+  color: #fff;
+}
+.dark-mode .Menu_Button {
+  background-color: #cfae67;
+  border: 2px solid #d9788a;
+  color: #2e1a18;
+}
+
+/* Coloring for specific words within menu. */
+.dark-mode .Espresso_Brown {
+  color: #4a2c2a;
+  font-weight: bold;
+}
+.dark-mode .Blossom_Pink {
+  color: #e8a7b7;
+  font-weight: bold;
+}
+.dark-mode .Creamy_Beige {
+  color: #f5e8d3;
+  font-weight: bold;
+}
+.dark-mode .Warm_Gold {
+  color: #d4a017;
+  font-weight: bold;
+}
+.dark-mode .Espresso_Ingredient,
+.dark-mode .Chilled_Espresso_Ingredient {
+  color: #a67b5b;
+}
+.dark-mode .Milk_Foam_Ingredient {
+  color: #f5e8d3;
+}
+.dark-mode .Steamed_Milk_Ingredient,
+.dark-mode .Cold_Milk_Ingredient {
+  color: #fff;
+}
+.dark-mode .Local_Honey_Ingredient,
+.dark-mode .Wildflower_Honey_Ingredient {
+  color: #d4a017;
+}
+.dark-mode .Hot_Water_Ingredient {
+  color: rgb(104, 27, 14);
+}
+.dark-mode .Chocolate_Ingredient {
+  color: #7a5a3f;
+  font-weight: bold;
+}
+.dark-mode .Lavender_Ingredient {
+  color: rgb(62, 1, 116);
+}
+.dark-mode .Cinnamon_Ingredient {
+  color: #a74c37;
+}
+.dark-mode .Rose_Syrup_Ingredient,
+.dark-mode .Edible_Petals_Ingredient {
+  color: rgb(255, 168, 183);
+}
+.dark-mode .Ice_Ingredient {
+  color: rgb(0, 128, 145);
+}
+.dark-mode .Orange_Blossom_Syrup_Ingredient {
+  color: #e79701;
+}
+.dark-mode .Vanilla_Ingredient {
+  color: #f5e8d3;
+  font-weight: bold;
+}
+.dark-mode .Cold_Steeped_Roast_Ingredient {
+  color: #a36230;
+}
+
+/*      =============ABOUT PAGE=============      */
+
+.dark-mode .About_Section {
+  background-color: #2e1a18;
+}
+.dark-mode .About_Section_Special_Word {
+  color: #e8d9c0;
+  -webkit-text-stroke: 0px;
+  font-weight: 700;
+}
+.dark-mode .About_Section_Dark_Special_Word {
+  color: #4a2c2a;
+  -webkit-text-stroke: 0.3px #f5e8d3;
+  font-weight: 900;
+}
+
+/*      =============CONTACT PAGE=============      */
+.dark-mode .Form {
+  background-color: #cfae67;
+}
+.dark-mode .Form_Row {
+  color: #4a2c2a;
+}
+
+/*      =============TEMPLATE PAGE=============      */
+
+/* ======NAVIGATION====== */
+.dark-mode .Navigation {
+  background-color: #cfae67;
+}
+.dark-mode .Navigation h1 {
+  color: #2e1a18;
+}
+.dark-mode .Navigation a {
+  color: #2e1a18;
+}
+
+/* ======FOOTER====== */
+.dark-mode .Footer {
+  background-color: #cfae67;
+}
+.dark-mode .Footer p {
+  color: #2e1a18;
+}
+.dark-mode .Footer h3 {
+  color: #2e1a18;
+}

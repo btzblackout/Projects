@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main-dark.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Menu - Bean Blossom</title>
+  </head>
+  <body>
+    <div class="Body_Container">
+      <div class="Navigation_Placeholder"></div>
+
+      <!--Container for the Chalkboard Menu-->
+      <div class="Menu">
+        <h1>Menu</h1>
+        <h3 class="Menu_Prompt">Select an item to see the details!</h3>
+
+        <!-- Coffee Section-->
+        <div class="Drinks">
+          <h1>Drinks</h1>
+          <div class="Menu_Drinks">
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Espresso.jpeg"
+              data-title="Espresso"
+              data-description="A bold, concentrated shot of our house-roasted beans."
+              data-notes="Straightforward and rich - purse Espresso Brown intensity."
+              data-price="$3.00"
+              data-base="<em>Base:</em> A single shot of espresso delivering that Espresso Brown richness."
+              data-flavor="<em>Flavor:</em> Pure, unadulterated coffee intensity."
+            >
+              <h4 class="Drink_Title">Espresso</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Latte.jpeg"
+              data-title="Latte"
+              data-description="Velvety espresso blended with steamed milk and a creamy finish."
+              data-notes="Creamy Beige in a cup - smooth and comforting."
+              data-price="$4.50"
+              data-base="<em>Base:</em> A single shot of espresso for a gentle Espresso Brown undertone."
+              data-milk="<em>Milk:</em> Steamed milk whipped to a Creamy Beige froth."
+              data-flavor="<em>Flavor:</em> Silky and mild, with a touch of sweetness from the milk."
+            >
+              <h4 class="Drink_Title">Latte</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Milk_Foam_Ingredient">Milk Foam</p>
+                <p class="Steamed_Milk_Ingredient">Steamed Milk</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Cappuccino.jpeg"
+              data-title="Cappuccino"
+              data-description="Frothy and robust - a perfect balance of espresso and milk."
+              data-notes="Classic with a toasty edge, crowd-pleaser."
+              data-price="$4.50"
+              data-base="<em>Base:</em> A single shot of espresso providing a bold Espresso Brown foundation."
+              data-milk="<em>Milk:</em> Equal parts steamed milk and foam for a rich texture."
+              data-flavor="<em>Flavor:</em> Nutty and robust, with a toasted warmth."
+            >
+              <h4 class="Drink_Title">Cappuccino</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Steamed_Milk_Ingredient">Steamed Milk</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Americano.jpeg"
+              data-title="Americano"
+              data-description="Smooth espresso softened with hot water."
+              data-notes="Simple yet versatile, appealing to purists."
+              data-price="$3.50"
+              data-base="<em>Base:</em> A single shot of espresso for a subtle Espresso Brown depth."
+              data-flavor="<em>Flavor:</em> Pure, unadulterated coffee intensity."
+            >
+              <h4 class="Drink_Title">Americano</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Hot_Water_Ingredient">Hot Water</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Blossom_Brew.jpeg"
+              data-title="The Blossom Brew"
+              data-description="Our house latte with a hint of lavender and honey."
+              data-notes='Ties in the "Blossom" theme with a floral twist - think Blossom Pink vibes and Warm Gold sweetness.'
+              data-price="$5.00"
+              data-base="<em>Base:</em> A single shot of espresso for a smooth Espresso Brown base."
+              data-milk="<em>Milk:</em> Steamed milk blended to a Creamy Beige silkiness."
+              data-flavor="<em>Flavor:</em> A delicate swirl of lavender and Warm Gold honey for a floral lift."
+            >
+              <h4 class="Drink_Title">The Blossom Brew</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Milk_Foam_Ingredient">Milk Foam</p>
+                <p class="Local_Honey_Ingredient">Local Honey</p>
+                <p class="Lavender_Ingredient">Lavender</p>
+                <p class="Steamed_Milk_Ingredient">Steamed Milk</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Mocha_Bloom.jpeg"
+              data-title="The Mocha Bloom"
+              data-description="Silky Mocha with a whisper of rose syrup."
+              data-notes="A luxurious, floral-chocolate blend that nods to the cafe's unique charm."
+              data-price="$5.50"
+              data-base="<em>Base:</em> A single shot of espresso with an Espresso Brown richness."
+              data-milk="<em>Milk:</em> Steamed milk smoothed to a Creamy Beige finish."
+              data-flavor="<em>Flavor:</em> A decadent mix of chocolate and a hint of Blossom Pink rose syrup."
+            >
+              <h4 class="Drink_Title">The Mocha Bloom</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Milk_Foam_Ingredient">Milk Foam</p>
+                <p class="Rose_Syrup_Ingredient">Rose Syrup</p>
+                <p class="Steamed_Milk_Ingredient">Steamed Milk</p>
+                <p class="Chocolate_Ingredient">Chocolate</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Honeyed_Bean.jpeg"
+              data-title="The Honeyed Bean"
+              data-description="Espresso kissed with local honey and a dash of cinnamon."
+              data-notes="Warm Gold accents in a bold coffee base - rustic and cozy."
+              data-price="$4.75"
+              data-base="<em>Base:</em> A single shot of espresso for a deep Espresso Brown core."
+              data-flavor="<em>Flavor:</em> Warm Gold honey and a spicy cinnamon kick."
+            >
+              <h4 class="Drink_Title">The Honeyed Bean</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Cinnamon_Ingredient">Cinnamon</p>
+                <p class="Local_Honey_Ingredient">Local Honey</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Blossom_Bean_Bliss.jpeg"
+              data-title="The Blossom Bean Bliss"
+              data-description="A silky latte infused with wildflower honey and a delicate sprinkle of edible petals."
+              data-notes="A harmonious blend of bold espresso and floral sweetness - our bestseller for a reason."
+              data-price="$5.75"
+              data-base="<em>Base:</em> A double shot of espresso for that Espresso Brown richness."
+              data-milk="<em>Milk:</em> Steamed to a Creamy Beige froth, velvety and smooth."
+              data-flavor="<em>Flavor:</em> A swirl of wildflower honey adds a Warm Gold sweetness - locally sourced for that artisanal touch."
+              data-finish="<em>Finish:</em> A light dust of dried, edible flower petals in Blossom Pink hues, making it visually stunning and subtly floral."
+            >
+              <h4 class="Drink_Title">The Blossom Bean Bliss</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Edible_Petals_Ingredient">Edible Petals</p>
+                <p class="Milk_Foam_Ingredient">Milk Foam</p>
+                <p class="Wildflower_Honey_Ingredient">Wildflower Honey</p>
+                <p class="Steamed_Milk_Ingredient">Steamed Milk</p>
+                <p class="Espresso_Ingredient">Espresso</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Iced_Latte.jpeg"
+              data-title="Iced Latte"
+              data-description="Chilled Espresso and milk over ice, refreshingly smooth."
+              data-notes="Creamy Beige coolness for warmer days."
+              data-price="$4.75"
+              data-base="<em>Base:</em> A single shot of chilled espresso with an Espresso Brown chill."
+              data-milk="<em>Milk:</em> Cold milk poured to a Creamy Beige smoothness."
+              data-flavor="<em>Flavor:</em> Crisp and refreshing, with a light coffee bite."
+            >
+              <h4 class="Drink_Title">Iced Latte</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Milk_Foam_Ingredient">Milk Foam</p>
+                <p class="Cold_Milk_Ingredient">Cold Milk</p>
+                <p class="Chilled_Espresso_Ingredient">Chilled Espresso</p>
+                <p class="Ice_Ingredient">Ice</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Cold_Blossom.jpeg"
+              data-title="The Cold Blossom"
+              data-description="Cold Brew infused with a touch of vanilla and orange blossom."
+              data-notes="A floral, refreshing take on cold brew - light and summery."
+              data-price="$5.25"
+              data-base="<em>Base:</em> Cold-steeped medium/dark roast for a smooth Espresso Brown depth."
+              data-flavor="<em>Flavor:</em> Subtle vanilla and orange blossom for a summery lift. "
+            >
+              <h4 class="Drink_Title">The Cold Blossom</h4>
+              <div class="Drink_Content">
+                <span class="Drink_Small_Handle"></span>
+                <p class="Orange_Blossom_Syrup_Ingredient">
+                  Orange Blossom Syrup
+                </p>
+                <p class="Vanilla_Ingredient">Vanilla</p>
+                <p class="Cold_Steeped_Roast_Ingredient">
+                  Cold Steeped Medium / Dark Roast
+                </p>
+                <p class="Ice_Ingredient">Ice</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastries Section-->
+        <div class="Pastries">
+          <h1>Pastries</h1>
+          <div class="Menu_Pastries">
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Blueberry_Muffin.jpeg"
+              data-title="Blueberry Muffin"
+              data-description="A soft, moist muffin bursting with juicy blueberries and a sugared top."
+              data-notes="Comforting and hearty, ideal for a morning pick-me-up alongside a Latte or Americano."
+              data-price="$3.75"
+            >
+              <h4 class="Drink_Title">Blueberry Muffin</h4>
+              <div class="Pastry_Content">
+                <img src="/media/images/Blueberry_Muffin.jpeg" alt="" />
+                <p style="color: rgb(0, 128, 145); font-weight: 700">Juicy</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Croissant.jpeg"
+              data-title="Croissant"
+              data-description="Flaky, Buttery layers baked in to a golden crisp."
+              data-notes="A classic that pairs perfectly with any espresso drink – simple, timeless, and universally loved. "
+              data-price="$3.50"
+            >
+              <h4 class="Drink_Title">Croissant</h4>
+              <div class="Pastry_Content">
+                <img src="/media/images/Croissant.jpeg" alt="" />
+                <p style="color: #a36230; font-weight: 700">Flaky</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Cinnamon_Roll.jpeg"
+              data-title="Cinnamon Roll"
+              data-description="A gooey spiral of dough swirled with cinnamon and topped with a light glaze."
+              data-notes="Warm and indulgent, it’s a nostalgic treat that begs for a Cappuccino on the side."
+              data-price="$4.00"
+            >
+              <h4 class="Drink_Title">Cinnamon Roll</h4>
+              <div class="Pastry_Content">
+                <img src="/media/images/Cinnamon_Roll.jpeg" alt="" />
+                <p style="color: #f5e8d3; font-weight: 700">Gooey</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Lavender_Blossom_Scone.jpeg"
+              data-title="Lavender Blossom Scone"
+              data-description="A tender scone infused with lavender and drizzled with a Warm Gold honey glaze."
+              data-notes="Ties into the “Blossom” theme with its floral flavor, pairing beautifully with the Blossom Brew for a cohesive experience."
+              data-price="$4.25"
+            >
+              <h4 class="Drink_Title">Lavender Blossom Scone</h4>
+              <div class="Pastry_Content">
+                <img src="/media/images/Lavender_Blossom_Scone.jpeg" alt="" />
+                <p style="color: rgb(105, 36, 165); font-weight: 700">Floral</p>
+              </div>
+            </div>
+            <div
+              class="Menu_Drink"
+              data-picture="/media/images/Rose_Petal_Danish.jpeg"
+              data-title="Rose Petal Danish"
+              data-description="A flaky Danish filled with Creamy Beige almond cream and sprinkled with edible Blossom Pink rose petals. "
+              data-notes="A luxurious, floral twist that elevates the pastry game – perfect with the Mocha Bloom or Blossom Bean Bliss."
+              data-price="$4.50"
+            >
+              <h4 class="Drink_Title">Rose Petal Danish</h4>
+              <div class="Pastry_Content">
+                <img src="/media/images/Rose_Petal_Danish.jpeg" alt="" />
+                <p style="color: #e8a7b7; font-weight: 700">Elegant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toggleable pop up when users click on an item in the menu.-->
+      <div class="Menu_Details"></div>
+    </div>
+    <footer class="Footer_Placeholder"></footer>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    // Inject nav bar and footer.
+    $(".Navigation_Placeholder").load("/views/template.html .Navigation");
+    $(".Footer_Placeholder").load("/views/template.html .Footer");
+
+    // Check to see if there is nothing in localStorage (new user);
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    }
+
+    // Check localStorage to get the last selected theme and make active.
+    else if (localStorage.getItem("theme") == "dark") {
+      var element = document.body;
+      element.classList.add("dark-mode");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+
+    // Track the last clicked coffee on the menu.
+    let lastClickedItem = null;
+
+    // Wrap specific phrases in spans with classes, used for coloring text.
+    function stylePhrases(text) {
+      return text
+        .replace(
+          "Espresso Brown",
+          '<span class="Espresso_Brown">Espresso Brown</span>'
+        )
+        .replace(
+          "Creamy Beige",
+          '<span class="Creamy_Beige">Creamy Beige</span>'
+        )
+        .replace("Warm Gold", '<span class="Warm_Gold">Warm Gold</span>')
+        .replace(
+          "Blossom Pink",
+          '<span class="Blossom_Pink">Blossom Pink</span>'
+        );
+    }
+    // Javascript to handle showing details for the menu items.
+    $(".Menu_Drink").click(function () {
+      // Get all the data fields for the drinks/pastries.
+      const picture = $(this).data("picture");
+      const title = $(this).data("title");
+      const description = $(this).data("description");
+      const notes = $(this).data("notes" || "");
+      const price = $(this).data("price");
+      const base = $(this).data("base") || "";
+      const milk = $(this).data("milk") || "";
+      const flavor = $(this).data("flavor") || "";
+      const finish = $(this).data("finish") || "";
+
+      // Apply styling to phrases
+      const styledBase = stylePhrases(base);
+      const styledMilk = stylePhrases(milk);
+      const styledFlavor = stylePhrases(flavor);
+      const styledFinish = stylePhrases(finish);
+      const styledDescription = stylePhrases(description);
+      const styledNotes = stylePhrases(notes);
+
+      // Create HTML structure for the details
+      // Some of these will be empty so account for this with "".
+      const detailsHTML = `
+      <img src="${picture}" alt="${title}" class="Menu_Details_Image">
+      <div class="Menu_Details_Info">
+        <h3 class="Menu_Details_Title">${title}</h3>
+        <p class="Menu_Details_Price">${price}</p>
+        <div class="Menu_Details_Content">
+          <p class="Menu_Details_Description">${styledDescription} ${styledNotes}</p>
+          ${base ? `<p class="Menu_Details_Base">${styledBase}</p>` : ""}
+          ${flavor ? `<p class="Menu_Details_Flavor">${styledFlavor}</p>` : ""}
+          ${milk ? `<p class="Menu_Details_Milk">${styledMilk}</p>` : ""}
+          ${finish ? `<p class="Menu_Details_Finish">${styledFinish}</p>` : ""}
+        </div>
+      </div>
+      `;
+
+      const $menuDetails = $(".Menu_Details");
+
+      // Check if its the same list item.
+      const isSameItem = lastClickedItem === this;
+
+      // If it is the same, toggle the menu.
+      if (isSameItem && $menuDetails.is(":visible")) {
+        // If same item and details are visible, hide them
+        $menuDetails.hide().removeClass("active");
+      } else {
+        // Show or update details and scroll to it.
+        $menuDetails.html(detailsHTML).addClass("active").show();
+        $menuDetails[0].scrollIntoView({ behavior: "smooth", block: "start" });
+        lastClickedItem = this;
+      }
+    });
+  });
+
+  function ChangeTheme() {
+    // Check local storage
+    if (localStorage.getItem("theme") == "light") {
+      // Change the theme.
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Update local storage.
+      localStorage.setItem("theme", "dark");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+    // Check local storage.
+    else if (localStorage.getItem("theme") == "dark") {
+      // Change the theme.
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Update the local storage.
+      localStorage.setItem("theme", "light");
+
+      // Change the text to current theme (light).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Bloom Mode.";
+    }
+  }
+</script>

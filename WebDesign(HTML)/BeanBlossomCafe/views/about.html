@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main-dark.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>About Us - Bean Blossom</title>
+  </head>
+  <body>
+    <div class="Body_Container">
+      <div class="Navigation_Placeholder"></div>
+
+      <!--About Main Section.-->
+      <div class="About_Section">
+        <h1>About Us</h1>
+
+        <!--Used to split the paragraphs for styling with their respective image. -->
+        <div class="About_Section_Content">
+          <div class="About_Section_Content_Paragraphs">
+            <p>
+              Bean Blossom Cafe began as a dream steeped in
+              <span
+                class="About_Section_Dark_Special_Word"
+                style="color: #4a2c2a; font-weight: 700"
+                >Espresso Brown</span
+              >
+              richness—a vision to craft a space where coffee and community
+              could flourish. Tucked in New York, our story sprouted from a love
+              of bold flavors and cozy moments, sweetened by
+              <span style="color: #d4a017; font-weight: 700">Warm Gold</span>
+              honey from local hives. What started as a small roastery has
+              blossomed into a haven where every visit feels like coming home.
+            </p>
+            <p>
+              Our drinks tell tales of care and creativity, from the
+              <span class="About_Section_Special_Word">Creamy Beige</span>
+              froth of a velvety Latte to the floral
+              <span style="color: #e8a7b7; font-weight: 700">Blossom Pink</span>
+              lift of our Mocha Bloom. Each cup starts with house-roasted beans,
+              kissed with unique twists like lavender or rose syrup, reflecting
+              our passion for blending tradition with a playful edge. Whether
+              you’re savoring a classic Espresso or indulging in our signature
+              Blossom Bean Bliss, you’re tasting the heart of our craft.
+            </p>
+          </div>
+          <img src="/media/images/Mocha_Bloom.jpeg" alt="" />
+        </div>
+        <div class="About_Section_Content">
+          <img src="/media/images/Lavender_Blossom_Scone.jpeg" alt="" />
+          <div class="About_Section_Content_Paragraphs">
+            <p>
+              The pastries are a new chapter, baked fresh to complement our
+              brews. Imagine the
+              <span style="color: #4a2c2a; font-weight: 700"
+                >Espresso Brown</span
+              >
+              warmth of a flaky Croissant or the
+              <span style="color: #e8a7b7; font-weight: 700">Blossom Pink</span>
+              elegance of a Rose Petal Danish, its almond cream layered with
+              edible petals. Our Lavender Blossom Scone drizzles
+              <span style="color: #d4a017; font-weight: 700">Warm Gold</span>
+              honey over a tender crumb, while the Cinnamon Roll and Blueberry
+              Muffin round out a lineup that’s as inviting as our coffee—simple
+              yet special.
+            </p>
+            <p>
+              Step inside, and the
+              <span class="About_Section_Special_Word">Creamy Beige</span> calm
+              of our space wraps you in its glow, with wooden tables echoing
+              <span style="color: #4a2c2a; font-weight: 700"
+                >Espresso Brown</span
+              >
+              depth. The air hums with the scent of roasting beans and buttery
+              dough, a nod to our artisanal roots. At Bean Blossom Cafe, we’re
+              more than a shop—we’re a place where drinks and pastries bloom
+              together, cultivating happiness one bite, one sip at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="Footer_Placeholder"></footer>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    // Inject nav bar and footer.
+    $(".Navigation_Placeholder").load("/views/template.html .Navigation");
+    $(".Footer_Placeholder").load("/views/template.html .Footer");
+
+    // Check to see if there is nothing in localStorage (new user);
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    }
+
+    // Check localStorage to get the last selected theme and make active.
+    else if (localStorage.getItem("theme") == "dark") {
+      var element = document.body;
+      element.classList.add("dark-mode");
+
+      // Change the text to current theme (dark).
+      document.getElementById("Toggle_Text").innerText =
+        "Current theme: Roast Mode.";
+    }
+  });
+</script>
