@@ -7,19 +7,25 @@ using Financial_Management_App.DataAccess;
 using Financial_Management_App.Models;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
 namespace Financial_Management_App.Controllers
 {
     public class LoginController : Controller
     {
-        UserDao userDAO = new UserDaoImp();
+        private readonly UserDao userDAO;
+
+        public LoginController(IConfiguration configuration)
+        {
+            userDAO = new UserDaoImp(configuration);
+        }
 
         // Landing (Login) page.
         public IActionResult Index()
         {
             // Check for user session, if one exists then redirect to home page.
             string user = HttpContext.Session.GetString("username");
-            if(user != null)
+            if (user != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -33,49 +39,47 @@ namespace Financial_Management_App.Controllers
         // Login method.
         public IActionResult Login(User user)
         {
-            User newUser = new User();
-            
-            // Check the users credentials.
-            newUser = userDAO.Login(user);
+            try
+            {
+                // Check the users credentials.
+                User newUser = userDAO.Login(user);
 
-            // If the username returned is null the credentials were invalid.
-            if (newUser.Username != null)
-            {
-                HttpContext.Session.SetString("username", newUser.Username);
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
+                // If the username returned is null the credentials were invalid.
+                if (newUser.Username != null)
+                {
+                    HttpContext.Session.SetString("username", newUser.Username);
+                    return RedirectToAction("Index", "Home");
+                }
+
                 return View("LoginError");
+            }
+            catch (Exception ex)
+            {
+
+                return Content($"Login failed: {ex.Message}");
             }
         }
 
         public IActionResult Register(User user)
         {
-            if (ModelState.IsValid)
+            try
             {
-                // This is from the Register page, attempt to register the user.
-                if (user.Username != null)
+                if (ModelState.IsValid && user.Username != null)
                 {
-                    // Check if the username already exists.
                     User checkUsername = userDAO.CheckByUsername(user.Username);
-
-                    // If this == null then the username does not exist.
                     if (checkUsername.Username == null)
                     {
-                        // Register the user
                         userDAO.Register(user);
                         return View("Index");
                     }
-
-                    // Return the Register Error page.
                     return View("RegisterExists", user);
                 }
+                return View();
             }
-            // If user.Username == null the Register button was clicked on login page, return Register page.
-            return View();
+            catch (Exception ex)
+            {
+                return Content($"Register failed: {ex.Message}");
+            }
         }
-
-        
     }
 }

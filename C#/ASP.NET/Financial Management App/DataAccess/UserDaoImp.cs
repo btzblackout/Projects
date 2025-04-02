@@ -4,12 +4,20 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Financial_Management_App.Models;
+using Microsoft.Extensions.Configuration;
 using MySqlConnector;
+using Microsoft.Data.SqlClient;
 
 namespace Financial_Management_App.DataAccess
 {
     public class UserDaoImp : UserDao
     {
+        private readonly string connectionString;
+
+        public UserDaoImp(IConfiguration configuration)
+        {
+            connectionString = configuration.GetConnectionString("Default");
+        }
         // Create 
         public void Register(User user)
         {
@@ -17,30 +25,19 @@ namespace Financial_Management_App.DataAccess
             user.Password = EncryptPassword(user.Password);
 
             // Call the DBConnection method with appropriate string.
-            DBConnection("INSERT INTO users (Username, Password, First_Name, Last_Name, Balance) VALUES ('" + user.Username + "', '" + user.Password + "', '" + user.First_Name + "', '" + user.Last_Name + "', " + user.Balance + ")", user);
+            DBConnection("INSERT INTO users (Username, Password, First_Name, Last_Name, Balance) VALUES (@Username, @Password, @FirstName, @LastName, @Balance)", user);
         }
 
         // Read
         public User Login(User user)
         {
-            // Create new user.
             User returnUser = new User();
-
-            // Encrypt the users password
             user.Password = EncryptPassword(user.Password);
-
-            // Call the DBConnection method with appropriate string
-            returnUser = DBConnection("SELECT * FROM users WHERE Username = '" + user.Username + "' AND Password = '" + user.Password + "'", user);
-
-            Debug.WriteLine(EncryptPassword("admin"));
-            // If the returnUser is null then skip
-            if(returnUser.Username != null)
+            returnUser = DBConnection("SELECT * FROM users WHERE Username = @Username AND Password = @Password", user);
+            if (returnUser.Username != null)
             {
-                // Decrypt the users password
                 returnUser.Password = DecryptPassword(returnUser.Password);
             }
- 
-            // return the user
             return returnUser;
         }
 
@@ -54,96 +51,69 @@ namespace Financial_Management_App.DataAccess
             user.ID = 0;
 
             // Call the DBConnection method with appropriate string and return user.
-            User returnUser = DBConnection("SELECT * FROM users WHERE Username = '" + username + "'", user);
-            return returnUser;
+            return DBConnection("SELECT * FROM users WHERE Username = @Username", new User { Username = username });
         }
 
         // Update
         public void UpdateBalance(int id, Decimal balance, User user)
         {
             // Call the DBConnection method with appropriate string.
-            DBConnection("UPDATE users SET Balance = " + balance + " WHERE ID = " + id, user);
+            DBConnection("UPDATE users SET Balance = @Balance WHERE ID = @ID", new User { ID = id, Balance = balance });
         }
 
         // Connection method.
         private User DBConnection(string statement, User user)
         {
+
             User returnUser = new User();
             try
             {
-                MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
-                {
-                    Server = "localhost",
-                    UserID = "root",
-                    Password = "root",
-                    Database = "financial_management"
-                };
-
-                // Open the connection.
-                using var connection = new MySqlConnection(builder.ConnectionString);
+                using var connection = new SqlConnection(connectionString);
                 connection.Open();
-
-                // Create a DB command
-                using var command = connection.CreateCommand();
-                command.CommandText = statement;
-
-                // Execute the command.
+                using var command = new SqlCommand(statement, connection);
+                if (statement.Contains("@Username")) command.Parameters.AddWithValue("@Username", user.Username ?? (object)DBNull.Value);
+                if (statement.Contains("@Password")) command.Parameters.AddWithValue("@Password", user.Password ?? (object)DBNull.Value);
+                if (statement.Contains("@FirstName")) command.Parameters.AddWithValue("@FirstName", user.First_Name ?? (object)DBNull.Value);
+                if (statement.Contains("@LastName")) command.Parameters.AddWithValue("@LastName", user.Last_Name ?? (object)DBNull.Value);
+                if (statement.Contains("@Balance")) command.Parameters.AddWithValue("@Balance", user.Balance);
+                if (statement.Contains("@ID")) command.Parameters.AddWithValue("@ID", user.ID);
                 using var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    var id = reader.GetInt32("ID");
-                    var username = reader.GetString("Username");
-                    var password = reader.GetString("Password");
-                    var first_name = reader.GetString("First_Name");
-                    var last_name = reader.GetString("Last_Name");
-                    var balance = reader.GetDecimal("Balance");
-
-                    returnUser.ID = id;
-                    returnUser.Username = username;
-                    returnUser.Password = password;
-                    returnUser.First_Name = first_name;
-                    returnUser.Last_Name = last_name;
-                    returnUser.Balance = balance;
+                    returnUser.ID = reader.GetInt32(reader.GetOrdinal("ID"));
+                    returnUser.Username = reader.GetString(reader.GetOrdinal("Username"));
+                    returnUser.Password = reader.GetString(reader.GetOrdinal("Password"));
+                    returnUser.First_Name = reader.GetString(reader.GetOrdinal("First_Name"));
+                    returnUser.Last_Name = reader.GetString(reader.GetOrdinal("Last_Name"));
+                    returnUser.Balance = reader.GetDecimal(reader.GetOrdinal("Balance"));
                 }
-
-                // Close the connection.
-                connection.Close();
             }
-            catch (MySqlException sqlexc)
+            catch (SqlException sqlexc)
             {
-                // Create an error object.
                 Error error = new Error(user.ID, sqlexc.Message, sqlexc.Source, DateTime.Now);
                 ErrorLogging(error);
             }
-
-
             return returnUser;
+            
         }
 
         // Error logging.
         private void ErrorLogging(Error error)
         {
-            MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
+            try
             {
-                Server = "localhost",
-                UserID = "root",
-                Password = "root",
-                Database = "financial_management"
-            };
-
-            // Open the connection.
-            using var connection = new MySqlConnection(builder.ConnectionString);
-            connection.Open();
-
-            // Create a DB command
-            using var command = connection.CreateCommand();
-            command.CommandText = "INSERT INTO errors (Message, Source, Date, UserID) VALUES ('" + error.Message + "', '" + error.Source + "', '" + error.Date + "', " + error.UserID + ")";
-
-            // Execute the command.
-            command.ExecuteNonQuery();
-
-            // Close the connection.
-            connection.Close();
+                using var connection = new SqlConnection(connectionString);
+                connection.Open();
+                using var command = new SqlCommand(
+                    "INSERT INTO errors (Message, Source, Date, UserID) VALUES (@Message, @Source, @Date, @UserID)",
+                    connection);
+                command.Parameters.AddWithValue("@Message", error.Message);
+                command.Parameters.AddWithValue("@Source", error.Source);
+                command.Parameters.AddWithValue("@Date", error.Date);
+                command.Parameters.AddWithValue("@UserID", error.UserID);
+                command.ExecuteNonQuery();
+            }
+            catch (SqlException) { /* Handle silently */ }
         }
 
         // Encode password.

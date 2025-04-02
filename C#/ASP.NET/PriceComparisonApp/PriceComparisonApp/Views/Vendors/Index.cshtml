@@ -1,0 +1,11 @@
+﻿<!--Reference the Vendor object.-->
+@model List<PriceComparisonApp.Models.Vendor>
+
+
+<h2>Vendors</h2>
+<ul>
+    @foreach (var vendor in Model)
+    {
+        <li>@vendor.Name - @vendor.Contact</li>
+    }
+</ul>

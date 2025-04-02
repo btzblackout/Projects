@@ -89,7 +89,7 @@ namespace Financial_Management_App.Models
         // Declare constructors.
         public Expense()
         {
-
+            this.date = DateTime.Now;
         }
 
         public Expense(int id, string name, Decimal price, int interval, string type, string label, DateTime date, string notes, int userId)

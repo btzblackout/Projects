@@ -1,170 +1,151 @@
 ﻿using Financial_Management_App.Models;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MySqlConnector;
-using Financial_Management_App.BusinessLogic;
 
 namespace Financial_Management_App.DataAccess
 {
     public class IncomeDaoImp : IncomeDao
-    {      
+    {
+        private readonly string connectionString;
+
+        public IncomeDaoImp(IConfiguration configuration)
+        {
+            connectionString = configuration.GetConnectionString("Default");
+        }
+
         // Create
         public void AddIncome(Income income, User user)
         {
-            // Add the income to the DB
-            DBConnection("INSERT INTO income (Name, Amount, Begin_Date, End_Date, `Interval`, Type, Next_Pay_Begin, Next_Pay_End, Notes, UserID) VALUES ('" + income.Name + "', " + income.Amount + ", '" + income.Begin_Date.ToString("yyyy-MM-dd") + "', '" + income.End_Date.ToString("yyyy-MM-dd") + "', " + income.Interval + ", '" + income.Type + "', '" + income.Next_Pay_Begin.ToString("yyyy-MM-dd") + "', '" + income.Next_Pay_End.ToString("yyyy-MM-dd") + "', '"+ income.Notes + "', " + income.UserId + ")", user);
-        
+            DBConnection("INSERT INTO income (Name, Amount, Begin_Date, End_Date, [Interval], Type, Next_Pay_Begin, Next_Pay_End, Notes, UserID) VALUES (@Name, @Amount, @BeginDate, @EndDate, @Interval, @Type, @NextPayBegin, @NextPayEnd, @Notes, @UserID)", income, user);
         }
 
         // Read
         public List<Income> ReturnIncomeList(User user)
         {
-            return DBConnection("SELECT * FROM income WHERE UserID = '" + user.ID + "'", user);
+            return DBConnection("SELECT * FROM income WHERE UserID = @UserID", null, user);
         }
 
         // Update
         public bool UpdateIncome(Income income, User user)
         {
-            // Update the record.
-            List<Income> incomeList = DBConnection("UPDATE income SET Name = '" + income.Name + "', Amount = " + income.Amount + ", Begin_Date = '" + income.Begin_Date.ToString("yyyy-MM-dd") + "', End_Date = '" + income.End_Date.ToString("yyyy-MM-dd") + "', `Interval` = " + income.Interval + ", Type = '" + income.Type + "', Next_Pay_Begin = '" + income.Next_Pay_Begin.ToString("yyyy-MM-dd") + "', Next_Pay_End = '" + income.Next_Pay_End.ToString("yyyy-MM-dd") + "', Notes = '" + income.Notes + "' WHERE ID = " + income.ID, user);
+            DBConnection("UPDATE income SET Name = @Name, Amount = @Amount, Begin_Date = @BeginDate, End_Date = @EndDate, [Interval] = @Interval, Type = @Type, Next_Pay_Begin = @NextPayBegin, Next_Pay_End = @NextPayEnd, Notes = @Notes WHERE ID = @ID", income, user);
             return true;
         }
 
         // Delete
         public bool DeleteIncome(Income income, User user)
         {
-
-            // Attempt to remove the income;
-            user.IncomeList = DBConnection("DELETE FROM income WHERE ID = " + income.ID, user);
-
-            // Check if the list is empty.
-            if (user.IncomeList.Count == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            user.IncomeList = DBConnection("DELETE FROM income WHERE ID = @ID", income, user);
+            return user.IncomeList.Count == 0;
         }
 
-        // Check if username exists.
+        // Check if income name exists
         public bool CheckIncomeName(Income income, User user)
         {
             bool exists = true;
-
-            MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
+            try
             {
-                Server = "localhost",
-                UserID = "root",
-                Password = "root",
-                Database = "financial_management"
-            };
-
-            // Open the connection.
-            using var connection = new MySqlConnection(builder.ConnectionString);
-            connection.Open();
-
-            // Create a DB command
-            using var command = connection.CreateCommand();
-            command.CommandText = "SELECT * FROM income WHERE Name = '" + income.Name + "' AND UserID = " + user.ID;
-
-            // If ExecureScalar is Null the income name does not exist.
-            if(command.ExecuteScalar() == null)
-            {
-                exists = false;
+                using var connection = new SqlConnection(connectionString);
+                connection.Open();
+                using var command = new SqlCommand("SELECT COUNT(*) FROM income WHERE Name = @Name AND UserID = @UserID", connection);
+                command.Parameters.AddWithValue("@Name", income.Name);
+                command.Parameters.AddWithValue("@UserID", user.ID);
+                exists = (int)command.ExecuteScalar() > 0;
             }
-
-            // Close the connection.
-            connection.Close();
-
+            catch (SqlException sqlexc)
+            {
+                ErrorLogging(new Error(user.ID, sqlexc.Message, sqlexc.Source, DateTime.Now));
+            }
             return exists;
         }
 
-        // Connection method.
-        private List<Income> DBConnection(string statement, User user)
+        // Connection method
+        private List<Income> DBConnection(string statement, Income income, User user)
         {
             List<Income> incomeList = new List<Income>();
             try
             {
-                MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
-                {
-                    Server = "localhost",
-                    UserID = "root",
-                    Password = "root",
-                    Database = "financial_management"
-                };
-
-                // Open the connection.
-                using var connection = new MySqlConnection(builder.ConnectionString);
+                using var connection = new SqlConnection(connectionString);
                 connection.Open();
+                using var command = new SqlCommand(statement, connection);
 
-                // Create a DB command
-                using var command = connection.CreateCommand();
-                command.CommandText = statement;
-
-                // Execute the command.
-                using var reader = command.ExecuteReader();
-                while (reader.Read())
+                if (income != null)
                 {
-                    var id = reader.GetInt32("ID");
-                    var name = reader.GetString("Name");
-                    var amount = reader.GetDecimal("Amount");
-                    var begin_date = reader.GetDateTime("Begin_Date");
-                    var end_date = reader.GetDateTime("End_Date");
-                    var interval = reader.GetByte("Interval");
-                    var type = reader.GetString("Type");
-                    var next_Pay_Begin = reader.GetDateTime("Next_Pay_Begin");
-                    var next_Pay_End = reader.GetDateTime("Next_Pay_End");
-                    var notes = reader.GetString("notes");
-                    var userId = reader.GetInt32("UserID");
-
-                    // Set the strings
-                    Income income = new Income(id, name, amount, begin_date, end_date, interval, type, next_Pay_Begin, next_Pay_End, notes, userId);
-                    income.Next_Pay_Begin_String = income.Next_Pay_Begin.ToString("d");
-                    income.Next_Pay_End_String = income.Next_Pay_End.ToString("d");
-                    incomeList.Add(income);
+                    command.Parameters.AddWithValue("@ID", income.ID);
+                    command.Parameters.AddWithValue("@Name", income.Name ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@Amount", income.Amount);
+                    command.Parameters.AddWithValue("@BeginDate", income.Begin_Date);
+                    command.Parameters.AddWithValue("@EndDate", income.End_Date);
+                    command.Parameters.AddWithValue("@Interval", income.Interval);
+                    command.Parameters.AddWithValue("@Type", income.Type ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@NextPayBegin", income.Next_Pay_Begin);
+                    command.Parameters.AddWithValue("@NextPayEnd", income.Next_Pay_End);
+                    command.Parameters.AddWithValue("@Notes", income.Notes ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@UserID", income.UserId);
+                }
+                else if (statement.Contains("@UserID"))
+                {
+                    command.Parameters.AddWithValue("@UserID", user.ID);
                 }
 
-                // Close the connection.
-                connection.Close();
-            }
-            catch (MySqlException sqlexc)
-            {
-                // Create an error object.
-                Error error = new Error(user.ID, sqlexc.Message, sqlexc.Source, DateTime.Now);
-                ErrorLogging(error);
-            }
+                using var reader = command.ExecuteReader();
+                if (statement.Contains("SELECT"))
+                {
+                    string notes = "";
+                    while (reader.Read())
+                    {
+                        if (!reader.IsDBNull(reader.GetOrdinal("Notes")))
+                        {
+                            notes = reader.GetString(reader.GetOrdinal("Notes"));
+                        }
 
+                        var newIncome = new Income
+                        (
+                            reader.GetInt32(reader.GetOrdinal("ID")),
+                            reader.GetString(reader.GetOrdinal("Name")),
+                            reader.GetDecimal(reader.GetOrdinal("Amount")),
+                            reader.GetDateTime(reader.GetOrdinal("Begin_Date")),
+                            reader.GetDateTime(reader.GetOrdinal("End_Date")),
+                            reader.GetInt32(reader.GetOrdinal("Interval")),
+                            reader.GetString(reader.GetOrdinal("Type")),
+                            reader.GetDateTime(reader.GetOrdinal("Next_Pay_Begin")),
+                            reader.GetDateTime(reader.GetOrdinal("Next_Pay_End")),
+                            notes,
+                            reader.GetInt32(reader.GetOrdinal("UserID"))
+                        );
+                           
+                        newIncome.Next_Pay_Begin_String = newIncome.Next_Pay_Begin.ToString("d");
+                        newIncome.Next_Pay_End_String = newIncome.Next_Pay_End.ToString("d");
+                        incomeList.Add(newIncome);
+                    }
+                }
+            }
+            catch (SqlException sqlexc)
+            {
+                ErrorLogging(new Error(user.ID, sqlexc.Message, sqlexc.Source, DateTime.Now));
+            }
             return incomeList;
         }
 
-        // Error logging.
+        // Error logging
         private void ErrorLogging(Error error)
         {
-            MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
+            try
             {
-                Server = "localhost",
-                UserID = "root",
-                Password = "root",
-                Database = "financial_management"
-            };
-
-            // Open the connection.
-            using var connection = new MySqlConnection(builder.ConnectionString);
-            connection.Open();
-
-            // Create a DB command
-            using var command = connection.CreateCommand();
-            command.CommandText = "INSERT INTO errors (Message, Source, Date, UserID) VALUES ('" + error.Message + "', '" + error.Source + "', '" + error.Date + "', " + error.UserID + ")";
-
-            // Execute the command.
-            command.ExecuteNonQuery();
-
-            // Close the connection.
-            connection.Close();
+                using var connection = new SqlConnection(connectionString);
+                connection.Open();
+                using var command = new SqlCommand(
+                    "INSERT INTO errors (Message, Source, Date, UserID) VALUES (@Message, @Source, @Date, @UserID)",
+                    connection);
+                command.Parameters.AddWithValue("@Message", error.Message);
+                command.Parameters.AddWithValue("@Source", error.Source);
+                command.Parameters.AddWithValue("@Date", error.Date);
+                command.Parameters.AddWithValue("@UserID", error.UserID);
+                command.ExecuteNonQuery();
+            }
+            catch (SqlException) { /* Silent fail */ }
         }
     }
 }

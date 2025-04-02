@@ -11,6 +11,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <ActiveDebugProfile>Financial_Management_App</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\Properties\PublishProfiles\FinancialManagementDemo - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

@@ -6,19 +6,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using Financial_Management_App.Models;
 using Financial_Management_App.DataAccess;
+using Microsoft.Extensions.Configuration;
 
 namespace Financial_Management_App.BusinessLogic
 {
     public class ExpenseDateUpdate
     {
-        IncomeDateCalculate incomeDateCalculate = new IncomeDateCalculate();
+        private readonly ExpenseDao expenseDao;
+        private readonly UserDao userDao;
+        private readonly IncomeDao incomeDao;
+        private readonly IncomeDateCalculate incomeDateCalculate;
+
+        public ExpenseDateUpdate(IConfiguration configuration)
+        {
+            expenseDao = new ExpenseDaoImp(configuration);
+            userDao = new UserDaoImp(configuration);
+            incomeDao = new IncomeDaoImp(configuration);
+            incomeDateCalculate = new IncomeDateCalculate(configuration);
+        }
 
         public User Update (User user)
         {
-            // Get a fresh, updated list
-            ExpenseDao expenseDao = new ExpenseDaoImp();
-            UserDao userDao = new UserDaoImp();
-            IncomeDao incomeDao = new IncomeDaoImp();
 
             user.ExpenseList = expenseDao.ReturnExpenseList(user);
             user.IncomeList = incomeDao.ReturnIncomeList(user);

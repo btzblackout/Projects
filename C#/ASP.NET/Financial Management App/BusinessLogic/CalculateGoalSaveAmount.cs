@@ -3,47 +3,65 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Financial_Management_App.Models;
+using Microsoft.Extensions.Configuration;
 namespace Financial_Management_App.BusinessLogic
 {
     public class CalculateGoalSaveAmount
     {
-        IncomeDateCalculate incomeDateCalculate = new IncomeDateCalculate();
+        private readonly IncomeDateCalculate incomeDateCalculate;
+
+        public CalculateGoalSaveAmount(IConfiguration configuration)
+        {
+            incomeDateCalculate = new IncomeDateCalculate(configuration);
+        }
         
         // Calculate the amount to save based on the date.
         public Goal CalculateSaveAmountForDate(Goal goal, User user)
         {
+            if (!user.IncomeList.Any()) return goal;
             // determine how many paychecks the user has between now and goal date.
             goal.NumOfPaychecks = CalculatePaychecks(user, goal);
 
-            // Take the goal amount and divide it evenly among the paychecks.
-            goal.SavedAmount = goal.Price / goal.NumOfPaychecks;
+            // Avoid divide by 0
+            if(goal.NumOfPaychecks > 0)
+            {
+                // Take the goal amount and divide it evenly among the paychecks.
+                goal.SavedAmount = goal.Price / goal.NumOfPaychecks;
+            }
+            else
+            {
+                goal.SavedAmount = goal.Price;
+            }
 
-            return goal;
+
+                return goal;
         }
 
         // Calculate the amount to save based on the priority.
         public Goal CalculateSaveAmountForPriority(Goal goal, User user)
         {
-            Decimal savePortion = 0;
+            if (!user.IncomeList.Any()) return goal;
+            
+            decimal savePortion = 0;
             // Determine percent amount from priority
             switch(goal.Priority)
             {
                 case 1:
                     {
                         // This is low priority - 10% of income per pay period.
-                        savePortion = user.IncomeList[0].Amount * (decimal)0.1;
+                        savePortion = user.IncomeList[0].Amount * (decimal)0.1m;
                         break;
                     }
                 case 2:
                     {
                         // This is medium priority - 20% of income per pay period.
-                        savePortion = user.IncomeList[0].Amount * (decimal)0.2;
+                        savePortion = user.IncomeList[0].Amount * (decimal)0.2m;
                         break;
                     }
                 case 3:
                     {
                         // This is high priority - 30% of income per pay period.
-                        savePortion = user.IncomeList[0].Amount * (decimal)0.3;
+                        savePortion = user.IncomeList[0].Amount * (decimal)0.3m;
                         break;
                     }
                 default:
@@ -58,9 +76,8 @@ namespace Financial_Management_App.BusinessLogic
             else
             {
                 goal.SavedAmount = savePortion;
+                goal.NumOfPaychecks = (int)Math.Ceiling(goal.Price / savePortion);
             }
-            goal.NumOfPaychecks = (int)Math.Ceiling(goal.Price / savePortion);
-
 
             // Calculate the number of paychecks it will take at this number.
             return goal;
@@ -70,9 +87,10 @@ namespace Financial_Management_App.BusinessLogic
         {
             // Create counter
             int counter = 0;
+
+            if (user.IncomeList.Any()) return counter;
             // Create a dummy income object to perform the calculations on.
-            User dummyUser = new User();
-            dummyUser.IncomeList.Add(new Income());
+            User dummyUser = new User { IncomeList = new List<Income> { new Income()} };
 
             // Set the values like this instead of income = user.incomeList[0] to avoid linking the two.
             dummyUser.IncomeList[0].Begin_Date = user.IncomeList[0].Begin_Date;

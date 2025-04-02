@@ -1,6 +1,6 @@
 ﻿@model User
 
-
+<h4>Goals</h4>
 <table class="table table-striped">
     <thead class="thead-light">
         <tr>
@@ -39,7 +39,7 @@
             </td>
             <td>
                 @{
-                    if (item.Date_String == "1/1/0001")
+                    if (item.Priority != 0)
                     {
                         <p>No Date</p>
                     }

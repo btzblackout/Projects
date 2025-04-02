@@ -16,8 +16,6 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Mana
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.RazorAssemblyInfo.cache
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.RazorAssemblyInfo.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\Financial Management App.StaticWebAssets.Manifest.cache
-C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\Financial Management App.StaticWebAssets.xml
-C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\scopedcss\bundle\Financial Management App.styles.css
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.TagHelpers.input.cache
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.TagHelpers.output.cache
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.RazorCoreGenerate.cache
@@ -34,7 +32,6 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Mana
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.dll
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.pdb
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.genruntimeconfig.cache
-C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.csproj.CopyComplete
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -131,3 +128,29 @@ C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Mana
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditGoal.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Razor\Views\Home\DeleteGoal.cshtml.g.cs
 C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.csproj.AssemblyReference.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financial Management App.sourcelink.json
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\Financial Management App.StaticWebAssets.Pack.cache
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Financial Management App.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Financial Management App.props
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Financial Management App.props
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Financial Management App.props
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\obj\Debug\netcoreapp3.1\Financia.2C996F26.Up2Date
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\btzla\Documents\Programming\Projects\Projects\C#\ASP.NET\Financial Management App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll

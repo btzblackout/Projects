@@ -1,0 +1,142 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Login Index Page
+-------------------------------------------------- */
+.gradient-custom-2 {
+    background: rgb(235,8,187);
+    background: linear-gradient(90deg, rgba(93,13,113,1) 0%, rgba(255,0,155,1) 37%, rgba(254,255,10,1) 100%);
+}
+.gradient-custom-1 {
+    background: rgb(5,203,55);
+    background: linear-gradient(90deg, rgba(5,203,55,1) 0%, rgba(9,154,235,1) 36%, rgba(58,13,113,1) 100%);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: calc(100% - 50px) !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+@media (min-width: 769px) {
+    .gradient-custom-1 {
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+    }
+}
+
+.form-outline
+{
+    text-align:center;
+}
+
+.logo
+{
+    width: 100%;
+}
+
+.login-button {
+    color: #fff;
+    background: rgb(58,13,113);
+    background: linear-gradient(90deg, rgba(58,13,113,1) 0%, rgba(97,10,131,1) 50%, rgba(93,13,113,1) 100%);
+}
+.login-button:hover
+{
+    color: #d2d2d2;
+}
+
+/* Home Index Page
+-------------------------------------------------- */
+.NavbarLogo {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.navbar-brand {
+    background-color: #f3ec78;
+    background-image: linear-gradient(90deg, rgba(9,154,235,1) 0%, rgba(93,13,113,1) 50%, rgba(255,10,31,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Home EditExpense Page
+-------------------------------------------------- */
+.expenseCheckBoxes
+{
+    display:inline;
+}
